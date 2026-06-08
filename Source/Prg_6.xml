@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738663" _time="34988" date="05/23/2023" time="09:43:08"/>
+          <LastModified _date="739763" _time="40770" date="05/27/2026" time="11:19:30"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -77,7 +77,7 @@
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="N"/>
+            <AllowOptions val="Y"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>

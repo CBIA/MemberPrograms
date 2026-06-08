@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738693" _time="62026" date="06/22/2023" time="17:13:46"/>
+          <LastModified _date="739764" _time="36297" date="05/28/2026" time="10:04:57"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -195,7 +195,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738664" _time="30550" date="05/24/2023" time="08:29:10"/>
+            <LastModified _date="739764" _time="36256" date="05/28/2026" time="10:04:16"/>
           </Header>
           <ItemIsn val="6"/>
           <Resource>
@@ -404,10 +404,6 @@
               <ExpSyntax val="{1,1}"/>
               <ExpAttribute val="N"/>
             </Expression>
-            <Expression id="2">
-              <ExpSyntax val="Counter(0)>10"/>
-              <ExpAttribute val="B"/>
-            </Expression>
           </Expressions>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
           <Task MainProgram="N">
@@ -424,7 +420,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="738664" _time="32353" date="05/24/2023" time="08:59:13"/>
+              <LastModified _date="739764" _time="36255" date="05/28/2026" time="10:04:15"/>
             </Header>
             <ItemIsn val="33"/>
             <Resource>
@@ -444,22 +440,8 @@
                 <Cache val="Y"/>
                 <IdentifyRowModifications val="84"/>
               </DB>
-              <DB id="3">
-                <DataObject comp="-1" obj="20"/>
-                <Access val="R"/>
-                <Share val="W"/>
-                <Open val="N"/>
-                <Cache val="Y"/>
-                <IdentifyRowModifications val="84"/>
-              </DB>
               <Columns>
                 <Column id="2" name="v-match roster">
-                  <PropertyList model="FIELD">
-                    <Model attr_obj="FIELD_LOGICAL" id="1"/>
-                    <_FieldStyle id="276" val="1"/>
-                  </PropertyList>
-                </Column>
-                <Column id="3" name="v-match marketing list">
                   <PropertyList model="FIELD">
                     <Model attr_obj="FIELD_LOGICAL" id="1"/>
                     <_FieldStyle id="276" val="1"/>
@@ -772,7 +754,6 @@
                       <IsParameter val="N"/>
                       <INT_RCMP_INFO>
                         <v>24</v>
-                        <v>46</v>
                       </INT_RCMP_INFO>
                       <_DitIndexForToolkit val="10"/>
                       <DIFF_UPDATE val="T"/>
@@ -890,95 +871,6 @@
                   </LogicLine>
                   <LogicLine>
                     <Remark FlowIsn="30">
-                      <Type val="0"/>
-                      <Text val=" "/>
-                    </Remark>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="33" FlowIsn="55" id="33">
-                      <Column val="3"/>
-                      <Type val="V"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <_DitIndexForToolkit val="22"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="Y"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <LNK Direction="A" EVL_CND="R" FieldID="33" FlowIsn="46" Key="2" Mode="R" SortType="47" VIEW="27" VIEWS="4">
-                      <DB comp="-1" obj="20"/>
-                      <Condition val="Y"/>
-                    </LNK>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="29" FlowIsn="51" id="29">
-                      <Column val="1"/>
-                      <Type val="R"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <Locate MAX="3"/>
-                      <_DitIndexForToolkit val="24"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="N"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="30" FlowIsn="52" id="30">
-                      <Column val="7"/>
-                      <Type val="R"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <Locate MIN="3"/>
-                      <_DitIndexForToolkit val="26"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="N"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <Remark FlowIsn="53">
-                      <Type val="0"/>
-                      <Text val="The pa-rostercode column contains both roster member and marketing list name"/>
-                    </Remark>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="28" FlowIsn="50" id="28">
-                      <Column val="3"/>
-                      <Type val="R"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <Locate MAX="4" MIN="4"/>
-                      <_DitIndexForToolkit val="28"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="N"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <Select FieldID="26" FlowIsn="48" id="26">
-                      <Column val="2"/>
-                      <Type val="R"/>
-                      <ExposedToRoute val="N"/>
-                      <IsParameter val="N"/>
-                      <_DitIndexForToolkit val="30"/>
-                      <DIFF_UPDATE val="T"/>
-                      <Condition val="N"/>
-                      <Modifier val="S"/>
-                      <Direction val="C"/>
-                    </Select>
-                  </LogicLine>
-                  <LogicLine>
-                    <END_LINK FlowIsn="47"/>
-                  </LogicLine>
-                  <LogicLine>
-                    <Remark FlowIsn="45">
                       <Type val="0"/>
                       <Text val=" "/>
                     </Remark>
@@ -1456,150 +1348,6 @@
                     <ControlName id="46" val="ContactTypeId"/>
                     <_Orientation id="143"/>
                     <TabOrder id="314" val="10"/>
-                    <AllowParking id="315"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="22" id="22">
-                  <PropertyList model="CTRL_GUI0_STATIC">
-                    <Text id="19" valUnicode="v-match marketing list"/>
-                    <X id="21" val="10"/>
-                    <Y id="22" val="158"/>
-                    <Width id="23" val="83"/>
-                    <Height id="24" val="9"/>
-                    <Font id="50" val="1"/>
-                    <Style id="63" val="7"/>
-                    <EnableRTF id="69"/>
-                    <_Orientation id="143"/>
-                  </PropertyList>
-                </Control>
-                <Control PDOD="192" _test_id="21" id="21">
-                  <PropertyList model="CTRL_GUI0_EDIT">
-                    <Model ID="MODEL_GUI_INT" id="1">
-                      <Var FieldID="33"/>
-                    </Model>
-                    <X id="21" val="97"/>
-                    <Y id="22" val="158"/>
-                    <Width id="23" val="31"/>
-                    <Height id="24" val="10"/>
-                    <Data FieldID="33" id="43"/>
-                    <ControlName id="46" val="v-match marketing list"/>
-                    <_Orientation id="143"/>
-                    <TabOrder id="314" val="11"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="24" id="24">
-                  <PropertyList model="CTRL_GUI0_STATIC">
-                    <Text id="19" valUnicode="EffectiveFrom"/>
-                    <X id="21" val="10"/>
-                    <Y id="22" val="169"/>
-                    <Width id="23" val="54"/>
-                    <Height id="24" val="9"/>
-                    <Font id="50" val="1"/>
-                    <Style id="63" val="7"/>
-                    <EnableRTF id="69"/>
-                    <_Orientation id="143"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="23" id="23">
-                  <PropertyList model="CTRL_GUI0_EDIT">
-                    <Model ID="MODEL_GUI_INT" id="1">
-                      <Var FieldID="29"/>
-                    </Model>
-                    <X id="21" val="68"/>
-                    <Y id="22" val="169"/>
-                    <Width id="23" val="48"/>
-                    <Height id="24" val="10"/>
-                    <Data FieldID="29" id="43"/>
-                    <ControlName id="46" val="EffectiveFrom_0001"/>
-                    <_Orientation id="143"/>
-                    <TabOrder id="314" val="12"/>
-                    <AllowParking id="315"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="26" id="26">
-                  <PropertyList model="CTRL_GUI0_STATIC">
-                    <Text id="19" valUnicode="EffectiveEnd"/>
-                    <X id="21" val="10"/>
-                    <Y id="22" val="180"/>
-                    <Width id="23" val="50"/>
-                    <Height id="24" val="9"/>
-                    <Font id="50" val="1"/>
-                    <Style id="63" val="7"/>
-                    <EnableRTF id="69"/>
-                    <_Orientation id="143"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="25" id="25">
-                  <PropertyList model="CTRL_GUI0_EDIT">
-                    <Model ID="MODEL_GUI_INT" id="1">
-                      <Var FieldID="30"/>
-                    </Model>
-                    <X id="21" val="64"/>
-                    <Y id="22" val="180"/>
-                    <Width id="23" val="48"/>
-                    <Height id="24" val="10"/>
-                    <Data FieldID="30" id="43"/>
-                    <ControlName id="46" val="EffectiveEnd_0001"/>
-                    <_Orientation id="143"/>
-                    <TabOrder id="314" val="13"/>
-                    <AllowParking id="315"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="28" id="28">
-                  <PropertyList model="CTRL_GUI0_STATIC">
-                    <Text id="19" valUnicode="MarketingList"/>
-                    <X id="21" val="10"/>
-                    <Y id="22" val="191"/>
-                    <Width id="23" val="52"/>
-                    <Height id="24" val="9"/>
-                    <Font id="50" val="1"/>
-                    <Style id="63" val="7"/>
-                    <EnableRTF id="69"/>
-                    <_Orientation id="143"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="27" id="27">
-                  <PropertyList model="CTRL_GUI0_EDIT">
-                    <Model ID="MODEL_GUI_INT" id="1">
-                      <Var FieldID="28"/>
-                    </Model>
-                    <X id="21" val="66"/>
-                    <Y id="22" val="191"/>
-                    <Width id="23" val="171"/>
-                    <Height id="24" val="10"/>
-                    <Data FieldID="28" id="43"/>
-                    <ControlName id="46" val="MarketingList"/>
-                    <_Orientation id="143"/>
-                    <TabOrder id="314" val="14"/>
-                    <AllowParking id="315"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="30" id="30">
-                  <PropertyList model="CTRL_GUI0_STATIC">
-                    <Text id="19" valUnicode="ContactTypeId"/>
-                    <X id="21" val="10"/>
-                    <Y id="22" val="202"/>
-                    <Width id="23" val="58"/>
-                    <Height id="24" val="9"/>
-                    <Font id="50" val="1"/>
-                    <Style id="63" val="7"/>
-                    <EnableRTF id="69"/>
-                    <_Orientation id="143"/>
-                  </PropertyList>
-                </Control>
-                <Control _test_id="29" id="29">
-                  <PropertyList model="CTRL_GUI0_EDIT">
-                    <Model ID="MODEL_GUI_INT" id="1">
-                      <Var FieldID="26"/>
-                    </Model>
-                    <X id="21" val="72"/>
-                    <Y id="22" val="202"/>
-                    <Width id="23" val="14"/>
-                    <Height id="24" val="10"/>
-                    <Data FieldID="26" id="43"/>
-                    <ControlName id="46" val="ContactTypeId_0001"/>
-                    <_Orientation id="143"/>
-                    <TabOrder id="314" val="15"/>
                     <AllowParking id="315"/>
                   </PropertyList>
                 </Control>
@@ -2260,7 +2008,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="738662" _time="57253" date="05/22/2023" time="15:54:13"/>
+                <LastModified _date="739764" _time="36297" date="05/28/2026" time="10:04:57"/>
               </Header>
               <ItemIsn val="5"/>
               <Resource>
@@ -2414,12 +2162,12 @@
                     </LogicLine>
                     <LogicLine>
                       <Select FieldID="5" FlowIsn="8" id="5">
-                        <ASS val="5"/>
+                        <ASS val="6"/>
                         <Column val="28"/>
                         <Type val="R"/>
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
-                        <Locate MAX="5" MIN="5"/>
+                        <Locate MAX="6" MIN="6"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="N"/>
                         <Modifier val="S"/>
@@ -2457,8 +2205,8 @@
                   <ExpSyntax val="IF({3,25}&lt;10,'0','')&amp;Trim(Str({3,25},'2'))"/>
                   <ExpAttribute val="A"/>
                 </Expression>
-                <Expression id="5">
-                  <ExpSyntax val="IF({3,32},{3,24},IF({3,33},{3,26},''))"/>
+                <Expression id="6">
+                  <ExpSyntax val="IF({3,32},{3,24},'')"/>
                   <ExpAttribute val="A"/>
                 </Expression>
               </Expressions>

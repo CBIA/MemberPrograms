@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CDS Get Accounts API" ISN_2="1" LastIsn="7" id="9">
+        <Header Description="CDS Get Accounts API" ISN_2="1" LastIsn="9" id="9">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738693" _time="60262" date="06/22/2023" time="16:44:22"/>
+          <LastModified _date="739762" _time="60753" date="05/26/2026" time="16:52:33"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -161,7 +161,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="Y"/>
+            <OpenTaskWindow val="N"/>
             <CloseTaskWindow val="N"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -569,7 +569,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="api call" ISN_2="2" LastIsn="7" id="9">
+          <Header Description="api call" ISN_2="2" LastIsn="9" id="9">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -582,9 +582,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738691" _time="43289" date="06/20/2023" time="12:01:29"/>
+            <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
           </Header>
-          <ItemIsn val="7"/>
+          <ItemIsn val="8"/>
           <Resource>
             <IO id="1">
               <Description val="test"/>
@@ -668,6 +668,15 @@
                   <_FieldStyle id="276" val="1"/>
                 </PropertyList>
               </Column>
+              <Column id="8" name="v-fetch xml attributes">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="3000"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="3000"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
             </Columns>
           </Resource>
           <Information>
@@ -700,7 +709,7 @@
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
-              <AllowOptions val="N"/>
+              <AllowOptions val="Y"/>
               <AllowQuery val="Y"/>
               <AllowModify val="Y"/>
               <AllowCreate val="Y"/>
@@ -752,7 +761,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="7"/>
+                    <_DitIndexForToolkit val="8"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -765,7 +774,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="8"/>
+                    <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -852,6 +861,19 @@
                     <Direction val="C"/>
                   </Select>
                 </LogicLine>
+                <LogicLine>
+                  <Select FieldID="8" FlowIsn="34" id="8">
+                    <Column val="8"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="1"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
             <LogicUnit id="3" propagate="78">
@@ -866,9 +888,20 @@
               </Event>
               <LogicLines>
                 <LogicLine>
+                  <Update FlowIsn="35">
+                    <FieldID val="8"/>
+                    <WithValue val="13"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
                   <Update FlowIsn="13">
                     <FieldID val="1"/>
-                    <WithValue val="1"/>
+                    <WithValue val="14"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1025,32 +1058,39 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="8" _last_test_id="24" id="1">
+            <FormEntry _last_isn="10" _last_test_id="26" id="1">
               <PropertyList model="FORM_GUI0">
-                <Width id="23" val="546"/>
-                <Height id="24" val="333"/>
+                <Width id="23" val="1170"/>
+                <Height id="24" val="367"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="api call"/>
               </PropertyList>
+              <Control _test_id="25" id="9">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="8"/>
+                  </Model>
+                  <X id="21" val="18"/>
+                  <Y id="22" val="7"/>
+                  <Width id="23" val="638"/>
+                  <Height id="24" val="119"/>
+                  <Data FieldID="8" id="43"/>
+                  <ControlName id="46" val="v-fetch xml attributes"/>
+                  <MultiLineEdit id="71" val="Y"/>
+                  <VerticalScroll id="73" val="Y"/>
+                  <AllowCRInData id="74" val="Y"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="1"/>
+                  <MultilineWordwrapScroll id="455" val="3"/>
+                </PropertyList>
+              </Control>
               <Control _test_id="18" id="1">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-fetch xml:"/>
-                  <X id="21" val="4"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="45"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="19" id="2">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-json response:"/>
-                  <X id="21" val="4"/>
-                  <Y id="22" val="32"/>
-                  <Width id="23" val="63"/>
-                  <Height id="24" val="9"/>
+                  <X id="21" val="9"/>
+                  <Y id="22" val="129"/>
+                  <Width id="23" val="67"/>
+                  <Height id="24" val="19"/>
                   <Style id="63" val="7"/>
                   <EnableRTF id="69"/>
                   <_Orientation id="143"/>
@@ -1060,7 +1100,7 @@
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-more response equals true"/>
                   <X id="21" val="10"/>
-                  <Y id="22" val="269"/>
+                  <Y id="22" val="325"/>
                   <Width id="23" val="108"/>
                   <Height id="24" val="9"/>
                   <Font id="50" val="1"/>
@@ -1075,20 +1115,20 @@
                     <Var FieldID="4"/>
                   </Model>
                   <X id="21" val="122"/>
-                  <Y id="22" val="269"/>
+                  <Y id="22" val="325"/>
                   <Width id="23" val="31"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="4" id="43"/>
                   <ControlName id="46" val="v-more response equals true"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="3"/>
+                  <TabOrder id="314" val="4"/>
                 </PropertyList>
               </Control>
               <Control _test_id="24" id="5">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-json reponse page number"/>
                   <X id="21" val="10"/>
-                  <Y id="22" val="281"/>
+                  <Y id="22" val="337"/>
                   <Width id="23" val="109"/>
                   <Height id="24" val="9"/>
                   <Font id="50" val="1"/>
@@ -1103,27 +1143,13 @@
                     <Var FieldID="5"/>
                   </Model>
                   <X id="21" val="123"/>
-                  <Y id="22" val="281"/>
+                  <Y id="22" val="337"/>
                   <Width id="23" val="18"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="5" id="43"/>
                   <ControlName id="46" val="v-json reponse page number"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="4"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="128" _test_id="15" id="7">
-                <PropertyList model="CTRL_GUI0_RICH_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="1"/>
-                  </Model>
-                  <X id="21" val="78"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="77"/>
-                  <Height id="24" val="16"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="v-fetch xml"/>
-                  <TabOrder id="314" val="1"/>
+                  <TabOrder id="314" val="5"/>
                 </PropertyList>
               </Control>
               <Control PDOD="128" _test_id="16" id="8">
@@ -1131,8 +1157,8 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="2"/>
                   </Model>
-                  <X id="21" val="78"/>
-                  <Y id="22" val="32"/>
+                  <X id="21" val="678"/>
+                  <Y id="22" val="7"/>
                   <Width id="23" val="453"/>
                   <Height id="24" val="226"/>
                   <Data FieldID="2" id="43"/>
@@ -1140,11 +1166,25 @@
                   <TabOrder id="314" val="2"/>
                 </PropertyList>
               </Control>
+              <Control PDOD="128" _test_id="15" id="7">
+                <PropertyList model="CTRL_GUI0_RICH_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="1"/>
+                  </Model>
+                  <X id="21" val="83"/>
+                  <Y id="22" val="129"/>
+                  <Width id="23" val="573"/>
+                  <Height id="24" val="192"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="v-fetch xml"/>
+                  <TabOrder id="314" val="3"/>
+                </PropertyList>
+              </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
             <Expression id="1">
-              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>&#xD;&#xA;    &lt;attribute name=&quot;name&quot; />&lt;attribute name=&quot;primarycontactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&lt;attribute name=&quot;pa_member&quot; />&#xD;&#xA;    &lt;attribute name=&quot;accountnumber&quot; />&lt;attribute name=&quot;accountid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;websiteurl&quot; />&lt;attribute name=&quot;cbia_typeofbusiness&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_totalemployees&quot; />&lt;attribute name=&quot;cbia_sicdescription&quot; />&#xD;&#xA;    &lt;attribute name=&quot;sic&quot; />&lt;attribute name=&quot;fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_familyownedbusiness&quot; />&lt;attribute name=&quot;numberofemployees&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&lt;attribute name=&quot;address2_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_line2&quot; />&lt;attribute name=&quot;address2_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_stateorprovince&quot; />&lt;attribute name=&quot;address2_postalcode&quot; />&#xD;&#xA;    &lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;  &#xD;&#xA;    '&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
+              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>&#xD;&#xA;    &lt;attribute name=&quot;name&quot; />&lt;attribute name=&quot;primarycontactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&lt;attribute name=&quot;pa_member&quot; />&#xD;&#xA;    &lt;attribute name=&quot;accountnumber&quot; />&lt;attribute name=&quot;accountid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;websiteurl&quot; />&lt;attribute name=&quot;cbia_typeofbusiness&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_totalemployees&quot; />&lt;attribute name=&quot;cbia_sicdescription&quot; />&#xD;&#xA;    &lt;attribute name=&quot;sic&quot; />&lt;attribute name=&quot;fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_familyownedbusiness&quot; />&lt;attribute name=&quot;numberofemployees&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&lt;attribute name=&quot;address2_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_line2&quot; />&lt;attribute name=&quot;address2_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_stateorprovince&quot; />&lt;attribute name=&quot;address2_postalcode&quot; />&#xD;&#xA;    &lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="2">
@@ -1187,9 +1227,17 @@
               <ExpSyntax val="Blb2File({0,2},'c:\temporaryfolder\jsonresponse.txt')"/>
               <ExpAttribute val="B"/>
             </Expression>
+            <Expression id="13">
+              <ExpSyntax val="'    &lt;attribute name=&quot;name&quot; />&lt;attribute name=&quot;primarycontactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&lt;attribute name=&quot;pa_member&quot; />&#xD;&#xA;    &lt;attribute name=&quot;accountnumber&quot; />&lt;attribute name=&quot;accountid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;websiteurl&quot; />&lt;attribute name=&quot;cbia_typeofbusiness&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_totalemployees&quot; />&lt;attribute name=&quot;cbia_sicdescription&quot; />&#xD;&#xA;    &lt;attribute name=&quot;sic&quot; />&lt;attribute name=&quot;fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_familyownedbusiness&quot; />&lt;attribute name=&quot;cbia_minorityowned&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_veteranowned&quot; />&lt;attribute name=&quot;cbia_womanowned&quot; />&lt;attribute name=&quot;numberofemployees&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&lt;attribute name=&quot;address2_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_line2&quot; />&lt;attribute name=&quot;address2_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_stateorprovince&quot; />&lt;attribute name=&quot;address2_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_advocacymember&quot; />'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="14">
+              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>'&amp;Trim({0,8})&amp;&#xD;&#xA;   '&lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
           <Task MainProgram="N">
-            <Header Description="Write temp table" ISN_2="3" LastIsn="7" id="9">
+            <Header Description="Write temp table" ISN_2="3" LastIsn="9" id="9">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -1205,9 +1253,9 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="738655" _time="53106" date="05/15/2023" time="14:45:06"/>
+              <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
             </Header>
-            <ItemIsn val="27"/>
+            <ItemIsn val="31"/>
             <Resource>
               <Columns>
                 <Column id="1" name="p-JSON blob">
@@ -1454,6 +1502,42 @@
                     <Picture id="157" valUnicode="50"/>
                     <StoredAs id="173" val="1"/>
                     <Size id="174" val="50"/>
+                    <_Flip id="194"/>
+                  </PropertyList>
+                </Column>
+                <Column id="28" name="v-cbia_minorityowned">
+                  <PropertyList model="FIELD">
+                    <Model attr_obj="FIELD_ALPHA" id="1"/>
+                    <Picture id="157" valUnicode="10"/>
+                    <StoredAs id="173" val="1"/>
+                    <Size id="174" val="10"/>
+                    <_Flip id="194"/>
+                  </PropertyList>
+                </Column>
+                <Column id="29" name="v-cbia_veteranowned">
+                  <PropertyList model="FIELD">
+                    <Model attr_obj="FIELD_ALPHA" id="1"/>
+                    <Picture id="157" valUnicode="10"/>
+                    <StoredAs id="173" val="1"/>
+                    <Size id="174" val="10"/>
+                    <_Flip id="194"/>
+                  </PropertyList>
+                </Column>
+                <Column id="30" name="v-cbia_womanowned">
+                  <PropertyList model="FIELD">
+                    <Model attr_obj="FIELD_ALPHA" id="1"/>
+                    <Picture id="157" valUnicode="10"/>
+                    <StoredAs id="173" val="1"/>
+                    <Size id="174" val="10"/>
+                    <_Flip id="194"/>
+                  </PropertyList>
+                </Column>
+                <Column id="31" name="v-advocacy">
+                  <PropertyList model="FIELD">
+                    <Model attr_obj="FIELD_ALPHA" id="1"/>
+                    <Picture id="157" valUnicode="10"/>
+                    <StoredAs id="173" val="1"/>
+                    <Size id="174" val="10"/>
                     <_Flip id="194"/>
                   </PropertyList>
                 </Column>
@@ -1881,6 +1965,54 @@
                       <ExposedToRoute val="N"/>
                       <IsParameter val="N"/>
                       <_DitIndexForToolkit val="31"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="Y"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="28" FlowIsn="39" id="28">
+                      <Column val="28"/>
+                      <Type val="V"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="Y"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="29" FlowIsn="40" id="29">
+                      <Column val="29"/>
+                      <Type val="V"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="Y"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="30" FlowIsn="41" id="30">
+                      <Column val="30"/>
+                      <Type val="V"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="Y"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="31" FlowIsn="43" id="31">
+                      <Column val="31"/>
+                      <Type val="V"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
                       <DIFF_UPDATE val="T"/>
                       <Condition val="Y"/>
                       <Modifier val="S"/>
@@ -2359,7 +2491,7 @@
               </FormEntry>
             </TaskForms>
             <Task MainProgram="N">
-              <Header Description="Read JsonResponse" ISN_2="4" LastIsn="7" id="9">
+              <Header Description="Read JsonResponse" ISN_2="4" LastIsn="9" id="9">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -2372,7 +2504,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="738655" _time="53106" date="05/15/2023" time="14:45:06"/>
+                <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
               </Header>
               <ItemIsn val="6"/>
               <Resource>
@@ -2752,7 +2884,7 @@
                 </Expression>
               </Expressions>
               <Task MainProgram="N">
-                <Header Description="Read Record" ISN_2="5" LastIsn="7" id="9">
+                <Header Description="Read Record" ISN_2="5" LastIsn="9" id="9">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -2765,7 +2897,7 @@
                   <External val="N"/>
                   <FormType val="N"/>
                   <DotNetObjectExists val="N"/>
-                  <LastModified _date="738655" _time="53106" date="05/15/2023" time="14:45:06"/>
+                  <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
                 </Header>
                 <ItemIsn val="1"/>
                 <Resource>
@@ -2924,7 +3056,7 @@
                   </FormEntry>
                 </TaskForms>
                 <Task MainProgram="N">
-                  <Header Description="Read Attributes" ISN_2="6" LastIsn="7" id="9">
+                  <Header Description="Read Attributes" ISN_2="6" LastIsn="9" id="9">
                     <ExecutionRight comp="-1"/>
                     <Resident val="N"/>
                     <SQL val="N"/>
@@ -2937,7 +3069,7 @@
                     <External val="N"/>
                     <FormType val="N"/>
                     <DotNetObjectExists val="N"/>
-                    <LastModified _date="738655" _time="53106" date="05/15/2023" time="14:45:06"/>
+                    <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
                   </Header>
                   <ItemIsn val="4"/>
                   <Resource>
@@ -3411,6 +3543,54 @@
                           </Update>
                         </LogicLine>
                         <LogicLine>
+                          <Update FlowIsn="119">
+                            <Parent val="3"/>
+                            <FieldID val="28"/>
+                            <WithValue val="1"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition val="Y"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="120">
+                            <Parent val="3"/>
+                            <FieldID val="29"/>
+                            <WithValue val="1"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition val="Y"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="121">
+                            <Parent val="3"/>
+                            <FieldID val="30"/>
+                            <WithValue val="1"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition val="Y"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="155">
+                            <Parent val="3"/>
+                            <FieldID val="31"/>
+                            <WithValue val="1"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition val="Y"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
                           <Remark FlowIsn="24">
                             <Type val="2"/>
                             <Text val=" "/>
@@ -3788,6 +3968,54 @@
                             <Incremental val="N"/>
                             <ForcedUpdate val="Y"/>
                             <Condition Exp="18"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="122">
+                            <Parent val="3"/>
+                            <FieldID val="28"/>
+                            <WithValue val="3"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition Exp="29"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="123">
+                            <Parent val="3"/>
+                            <FieldID val="29"/>
+                            <WithValue val="3"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition Exp="30"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="124">
+                            <Parent val="3"/>
+                            <FieldID val="30"/>
+                            <WithValue val="3"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition Exp="31"/>
+                            <Modifier val="B"/>
+                            <Direction val="C"/>
+                          </Update>
+                        </LogicLine>
+                        <LogicLine>
+                          <Update FlowIsn="156">
+                            <Parent val="3"/>
+                            <FieldID val="31"/>
+                            <WithValue val="3"/>
+                            <Incremental val="N"/>
+                            <ForcedUpdate val="Y"/>
+                            <Condition Exp="32"/>
                             <Modifier val="B"/>
                             <Direction val="C"/>
                           </Update>
@@ -4882,9 +5110,25 @@
                       <ExpSyntax val="Trim({0,1})='rb.pa_benefitid'"/>
                       <ExpAttribute val="B"/>
                     </Expression>
+                    <Expression id="29">
+                      <ExpSyntax val="Trim({0,1})='cbia_minorityowned'"/>
+                      <ExpAttribute val="B"/>
+                    </Expression>
+                    <Expression id="30">
+                      <ExpSyntax val="Trim({0,1})='cbia_veteranowned'"/>
+                      <ExpAttribute val="B"/>
+                    </Expression>
+                    <Expression id="31">
+                      <ExpSyntax val="Trim({0,1})='cbia_womanowned'"/>
+                      <ExpAttribute val="B"/>
+                    </Expression>
+                    <Expression id="32">
+                      <ExpSyntax val="Trim({0,1})='cbia_advocacymember'"/>
+                      <ExpAttribute val="B"/>
+                    </Expression>
                   </Expressions>
                   <Task MainProgram="N">
-                    <Header Description="Write to table" ISN_2="7" LastIsn="7" id="9">
+                    <Header Description="Write to table" ISN_2="7" LastIsn="9" id="9">
                       <ExecutionRight comp="-1"/>
                       <Resident val="N"/>
                       <SQL val="N"/>
@@ -4897,9 +5141,9 @@
                       <External val="N"/>
                       <FormType val="N"/>
                       <DotNetObjectExists val="N"/>
-                      <LastModified _date="738693" _time="60262" date="06/22/2023" time="16:44:22"/>
+                      <LastModified _date="739762" _time="60753" date="05/26/2026" time="16:52:33"/>
                     </Header>
-                    <ItemIsn val="28"/>
+                    <ItemIsn val="32"/>
                     <Resource>
                       <DB id="1">
                         <DataObject comp="-1" obj="4"/>
@@ -4988,7 +5232,7 @@
                             </DATAVIEW_SRC>
                           </LogicLine>
                           <LogicLine>
-                            <LNK Direction="A" EVL_CND="R" FlowIsn="3" Key="1" Mode="W" SortType="22" VIEW="1" VIEWS="28">
+                            <LNK Direction="A" EVL_CND="R" FlowIsn="3" Key="1" Mode="W" SortType="22" VIEW="1" VIEWS="32">
                               <DB comp="-1" obj="4"/>
                               <Condition val="Y"/>
                             </LNK>
@@ -5352,6 +5596,54 @@
                             </Select>
                           </LogicLine>
                           <LogicLine>
+                            <Select FieldID="29" FlowIsn="99" id="29">
+                              <Column val="29"/>
+                              <Type val="R"/>
+                              <ExposedToRoute val="N"/>
+                              <IsParameter val="N"/>
+                              <DIFF_UPDATE val="T"/>
+                              <Condition val="N"/>
+                              <Modifier val="S"/>
+                              <Direction val="C"/>
+                            </Select>
+                          </LogicLine>
+                          <LogicLine>
+                            <Select FieldID="30" FlowIsn="100" id="30">
+                              <Column val="30"/>
+                              <Type val="R"/>
+                              <ExposedToRoute val="N"/>
+                              <IsParameter val="N"/>
+                              <DIFF_UPDATE val="T"/>
+                              <Condition val="N"/>
+                              <Modifier val="S"/>
+                              <Direction val="C"/>
+                            </Select>
+                          </LogicLine>
+                          <LogicLine>
+                            <Select FieldID="31" FlowIsn="101" id="31">
+                              <Column val="31"/>
+                              <Type val="R"/>
+                              <ExposedToRoute val="N"/>
+                              <IsParameter val="N"/>
+                              <DIFF_UPDATE val="T"/>
+                              <Condition val="N"/>
+                              <Modifier val="S"/>
+                              <Direction val="C"/>
+                            </Select>
+                          </LogicLine>
+                          <LogicLine>
+                            <Select FieldID="32" FlowIsn="131" id="32">
+                              <Column val="33"/>
+                              <Type val="R"/>
+                              <ExposedToRoute val="N"/>
+                              <IsParameter val="N"/>
+                              <DIFF_UPDATE val="T"/>
+                              <Condition val="N"/>
+                              <Modifier val="S"/>
+                              <Direction val="C"/>
+                            </Select>
+                          </LogicLine>
+                          <LogicLine>
                             <END_LINK FlowIsn="22"/>
                           </LogicLine>
                         </LogicLines>
@@ -5635,6 +5927,50 @@
                             <Update FlowIsn="37">
                               <FieldID val="18"/>
                               <WithValue val="18"/>
+                              <Incremental val="N"/>
+                              <ForcedUpdate val="Y"/>
+                              <Condition val="Y"/>
+                              <Modifier val="B"/>
+                              <Direction val="C"/>
+                            </Update>
+                          </LogicLine>
+                          <LogicLine>
+                            <Update FlowIsn="102">
+                              <FieldID val="29"/>
+                              <WithValue val="29"/>
+                              <Incremental val="N"/>
+                              <ForcedUpdate val="Y"/>
+                              <Condition val="Y"/>
+                              <Modifier val="B"/>
+                              <Direction val="C"/>
+                            </Update>
+                          </LogicLine>
+                          <LogicLine>
+                            <Update FlowIsn="103">
+                              <FieldID val="30"/>
+                              <WithValue val="30"/>
+                              <Incremental val="N"/>
+                              <ForcedUpdate val="Y"/>
+                              <Condition val="Y"/>
+                              <Modifier val="B"/>
+                              <Direction val="C"/>
+                            </Update>
+                          </LogicLine>
+                          <LogicLine>
+                            <Update FlowIsn="104">
+                              <FieldID val="31"/>
+                              <WithValue val="31"/>
+                              <Incremental val="N"/>
+                              <ForcedUpdate val="Y"/>
+                              <Condition val="Y"/>
+                              <Modifier val="B"/>
+                              <Direction val="C"/>
+                            </Update>
+                          </LogicLine>
+                          <LogicLine>
+                            <Update FlowIsn="132">
+                              <FieldID val="32"/>
+                              <WithValue val="32"/>
                               <Incremental val="N"/>
                               <ForcedUpdate val="Y"/>
                               <Condition val="Y"/>
@@ -6215,6 +6551,22 @@
                       <Expression id="18">
                         <ExpSyntax val="{2,7}"/>
                         <ExpAttribute val="T"/>
+                      </Expression>
+                      <Expression id="29">
+                        <ExpSyntax val="{3,28}"/>
+                        <ExpAttribute val="A"/>
+                      </Expression>
+                      <Expression id="30">
+                        <ExpSyntax val="{3,29}"/>
+                        <ExpAttribute val="A"/>
+                      </Expression>
+                      <Expression id="31">
+                        <ExpSyntax val="{3,30}"/>
+                        <ExpAttribute val="A"/>
+                      </Expression>
+                      <Expression id="32">
+                        <ExpSyntax val="{3,31}"/>
+                        <ExpAttribute val="A"/>
                       </Expression>
                     </Expressions>
                   </Task>

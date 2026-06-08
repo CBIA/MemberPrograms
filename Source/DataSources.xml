@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="37"/>
+  <LastIsn val="44"/>
 
   <LastIsnFolder val="1"/>
 
@@ -250,7 +250,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_Acct_API_Response" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="4" name="CDS_Acct_API_Response">
+<DataObject PhysicalName="CDS_Acct_API_Response" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="4" name="CDS_Acct_API_Response">
 
   <Encrypt val="N"/>
 
@@ -619,6 +619,54 @@
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
+    <Column id="29" name="cbia_minorityowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_minorityowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_minorityowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="30" name="cbia_veteranowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_veteranowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_veteranowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="31" name="cbia_womanowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_womanowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_womanowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="33" name="cbia_advocacymember">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_advocacymember"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_advocacymember" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
   </Columns>
 
   <Indexes>
@@ -657,7 +705,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_Contact_API_Response" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="5" name="CDS_Contact_API_Response">
+<DataObject PhysicalName="CDS_Contact_API_Response" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="5" name="CDS_Contact_API_Response">
 
   <Encrypt val="N"/>
 
@@ -1086,6 +1134,30 @@
         <_FieldPhysical Name="Tooltip" PIC_U="250" Size="250" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
+    <Column id="10" name="Advocacy">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Advocacy"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Advocacy" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="NonAdvocacy">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="NonAdvocacy"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="NonAdvocacy" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
   </Columns>
 
   <Indexes>
@@ -1387,7 +1459,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_Account" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="8" name="CDS_Account">
+<DataObject PhysicalName="CDS_Account" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="8" name="CDS_Account">
 
   <Encrypt val="N"/>
 
@@ -1564,6 +1636,18 @@
         <_FieldPhysical Name="Acct_UrlIdentifier" PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
+    <Column id="13" name="Acct_Advocacy">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_Advocacy"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_Advocacy" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
   </Columns>
 
   <Indexes>
@@ -1643,7 +1727,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_SubmissionLog" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="9" name="CDS_SubmissionLog">
+<DataObject PhysicalName="CDS_SubmissionLog" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="9" name="CDS_SubmissionLog">
 
   <Encrypt val="N"/>
 
@@ -1985,7 +2069,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_AccountCoreSnapshot" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="10" name="CDS_AccountCoreSnapshot">
+<DataObject PhysicalName="CDS_AccountCoreSnapshot" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="10" name="CDS_AccountCoreSnapshot">
 
   <Encrypt val="N"/>
 
@@ -2294,6 +2378,42 @@
         <_FieldPhysical Name="Acct_physical_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
+    <Column id="29" name="Acct_MinorityOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_minorityowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_minorityowned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="30" name="Acct_VeteranOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_veteranowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_veteranowned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="31" name="Acct_WomanOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_womanowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_womanowned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
   </Columns>
 
   <Indexes>
@@ -2332,7 +2452,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_ContactCoreSnapshot" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="11" name="CDS_ContactCoreSnapshot">
+<DataObject PhysicalName="CDS_ContactCoreSnapshot" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="11" name="CDS_ContactCoreSnapshot">
 
   <Encrypt val="N"/>
 
@@ -2632,7 +2752,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_ContactTypeSnapshot" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="12" name="CDS_ContactTypeSnapshot">
+<DataObject PhysicalName="CDS_ContactTypeSnapshot" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="12" name="CDS_ContactTypeSnapshot">
 
   <Encrypt val="N"/>
 
@@ -2763,7 +2883,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_AccountNewInfo" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="13" name="CDS_AccountNewInfo">
+<DataObject PhysicalName="CDS_AccountNewInfo" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="13" name="CDS_AccountNewInfo">
 
   <Encrypt val="N"/>
 
@@ -3058,6 +3178,42 @@
         <_FieldPhysical Name="AcctNew_physical_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
+    <Column id="27" name="AcctNew_MinorityOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_MinorityOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_MinorityOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="28" name="AcctNew_VeteranOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_VeteranOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_VeteranOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="29" name="AcctNew_WomanOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_WomanOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_WomanOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
   </Columns>
 
   <Indexes>
@@ -3096,7 +3252,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_ContactCoreNewInfo" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="14" name="CDS_ContactCoreNewInfo">
+<DataObject PhysicalName="CDS_ContactCoreNewInfo" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="14" name="CDS_ContactCoreNewInfo">
 
   <Encrypt val="N"/>
 
@@ -3366,7 +3522,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_ContactTypeNewInfo" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="15" name="CDS_ContactTypeNewInfo">
+<DataObject PhysicalName="CDS_ContactTypeNewInfo" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="15" name="CDS_ContactTypeNewInfo">
 
   <Encrypt val="N"/>
 
@@ -3497,7 +3653,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="CDS_BatchId" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="16" name="CDS_BatchId">
+<DataObject PhysicalName="CDS_BatchId" Resident="N" UniqueISNConvState="12" data_source="EEPORTAL" id="16" name="CDS_BatchId">
 
   <Encrypt val="N"/>
 
@@ -5141,6 +5297,1719 @@
         <Segment>
           <Size val="2"/>
           <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_Acct_API_Response" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="38" name="CDS_Acct_API_ResponseCONVERSIO">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="16" name="BatchId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="7"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="BatchId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="7"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="BatchId" PIC_U="7" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1" name="name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="name"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="name" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="primarycontactid">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="primarycontactid"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="primarycontactid" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="primarycontactName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="primarycontactName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="primarycontactName" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="telephone">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="telephone"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="telephone" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="pa_member">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="pa_member"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="pa_member" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="accountnumber">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="accountnumber"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="accountnumber" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="accountid">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="accountid"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="accountid" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="websiteurl">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="websiteurl"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="websiteurl" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="cbia_typeofbusiness">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_typeofbusiness"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_typeofbusiness" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="cbia_totalemployees">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_totalemployees"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_totalemployees" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="cbia_sicdescription">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_sicdescription"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_sicdescription" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="sic">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="sic"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="sic" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="fax">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="fax"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="fax" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="cbia_familyownedbusiness">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_familyownedbusiness"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_familyownedbusiness" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="numberofemployees">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="numberofemployees"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="numberofemployees" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="address1_line1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address1_line1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address1_line1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="20" name="address1_line2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address1_line2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address1_line2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="address1_city">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address1_city"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address1_city" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="address1_stateorprovince">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address1_stateorprovince"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address1_stateorprovince" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="23" name="address1_postalcode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address1_postalcode"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address1_postalcode" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="24" name="address2_line1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address2_line1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address2_line1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="25" name="address2_line2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address2_line2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address2_line2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="26" name="address2_city">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address2_city"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address2_city" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="27" name="address2_stateorprovince">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address2_stateorprovince"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address2_stateorprovince" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="28" name="address2_postalcode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="address2_postalcode"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="address2_postalcode" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="SystemDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="SystemDate"/>
+        <Type id="179"/>
+        <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="SystemDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="SystemTime">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="SystemTime"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="SystemTime" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="29" name="cbia_minorityowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_minorityowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_minorityowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="30" name="cbia_veteranowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_veteranowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_veteranowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="31" name="cbia_womanowned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="cbia_womanowned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="cbia_womanowned" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Batch_AcctName_AcctId">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Batch_"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="16"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="100"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="50"/>
+          <Column val="7"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_AccountCoreSnapshot" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="39" name="CDS_AccountCoreSnapshotCONVERS">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="14" name="Acct_Year">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Year"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Year" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="Acct_AccountNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_AccountNo"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_AccountNo" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="Acct_UrlIdentifier">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="36"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="36"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_UrlIdentifier"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_UrlIdentifier" PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1" name="Acct_CompanyPhone">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_CompanyPhone"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_CompanyPhone" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Acct_CompanyFax">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_CompanyFax"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_CompanyFax" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Acct_EeInCT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_EeInCT"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="6"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_EeInCT" PIC_U="6" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Acct_SicCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_SicCode"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_SicCode" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Acct_SicDescription">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_SicDescription"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_SicDescription" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="Acct_Website">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Website"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Website" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Acct_FamilyOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_FamilyOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_FamilyOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="Acct_BusinessEntity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_BusinessEntity"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_BusinessEntity" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="Acct_SnapshotDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_SnapshotDate"/>
+        <Type id="179"/>
+        <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_SnapshotDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="Acct_SnapshotTime">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_SnapshotTime"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_SnapshotTime" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="Acct_Address1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_Address1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_Address1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="20" name="Acct_Address2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_Address2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_Address2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="Acct_City">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_City"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_City" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="Acct_State">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_State"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_State" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="23" name="Acct_Zip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_Zip"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="24" name="Acct_physical_Address1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_physical_Address1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_physical_Address1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="25" name="Acct_physical_Address2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_physical_Address2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_physical_Address2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="26" name="Acct_physical_City">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_physical_City"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_physical_City" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="27" name="Acct_physical_State">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_physical_State"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_physical_State" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="28" name="Acct_physical_Zip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_physical_Zip"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_physical_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="29" name="Acct_MinorityOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_MinorityOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_MinorityOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="30" name="Acct_VeteranOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_VeteranOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_VeteranOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="31" name="Acct_WomanOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_WomanOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_WomanOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Acct_YearAcctUrl">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="AcctSS_YearAcctUrlSnapShot"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="14"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="15"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="36"/>
+          <Column val="16"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_AccountNewInfo" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="40" name="CDS_AccountNewInfoCONVERSIO">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="14" name="AcctNew_Year">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Year"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Year" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="AcctNew_AccountNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_AccountNo"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_AccountNo" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="AcctNew_UrlIdentifier">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="36"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="36"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_UrlIdentifier"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_UrlIdentifier" PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1" name="AcctNew_CompanyPhone">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_CompanyPhone"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_CompanyPhone" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="AcctNew_CompanyFax">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="20"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_CompanyFax"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_CompanyFax" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="AcctNew_EeInCT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_EeInCT"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="6"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_EeInCT" PIC_U="6" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="AcctNew_Payroll">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="9"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Payroll"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="9"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Payroll" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="AcctNew_SicCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_SicCode"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_SicCode" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="AcctNew_SicDescription">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_SicDescription"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_SicDescription" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="AcctNew_Website">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Website"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Website" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="AcctNew_FamilyOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_FamilyOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_FamilyOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="AcctNew_BusinessEntity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_BusinessEntity"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_BusinessEntity" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="AcctNew_Address1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Address1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Address1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="AcctNew_Address2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Address2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Address2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="AcctNew_City">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_City"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_City" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="20" name="AcctNew_State">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_State"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_State" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="AcctNew_Zip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_Zip"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="AcctNew_physical_Address1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_physical_Address1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_physical_Address1" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="23" name="AcctNew_physical_Address2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_physical_Address2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_physical_Address2" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="24" name="AcctNew_physical_City">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_physical_City"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_physical_City" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="25" name="AcctNew_physical_State">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_physical_State"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_physical_State" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="26" name="AcctNew_physical_Zip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_physical_Zip"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_physical_Zip" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="27" name="AcctNew_MinorityOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_MinorityOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_MinorityOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="28" name="AcctNew_VeteranOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_VeteranOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_VeteranOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="29" name="AcctNew_WomanOwned">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="AcctNew_WomanOwned"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="AcctNew_WomanOwned" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="AcctNew_YearAcctUrl">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="AcctSS_YearAcctUrlSnapShot"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="14"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="15"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="36"/>
+          <Column val="16"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_Account" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="41" name="CDS_AccountCONVERSION">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="5"/>
+
+  <Columns>
+    <Column id="10" name="Acct_BatchID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="7"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_BatchID"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="7"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_BatchID" PIC_U="7" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Acct_MbrshipYear">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_MbrshipYear"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_MbrshipYear" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1" name="Acct_AccountNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_AccountNo"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_AccountNo" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="Acct_AccountId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_AccountId"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_AccountId" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Acct_AccountName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_AccountName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_AccountName" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Acct_ContactNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_ContactNo"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_ContactNo" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Acct_ContactFirstName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_ContactFirstName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_ContactFirstName" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="Acct_ContactLastName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_ContactLastName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_ContactLastName" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Acct_ContactEmail">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_ContactEmail"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_ContactEmail" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Acct_DateEmailSent">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_DateEmailSent"/>
+        <Type id="179"/>
+        <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_DateEmailSent" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="Acct_TimeEmailSent">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_TimeEmailSent"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_TimeEmailSent" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <PartOfDatetime id="244"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Acct_UrlIdentifier">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="36"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="36"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Acct_UrlIdentifier"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Acct_UrlIdentifier" PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Account_YearAcctUrl">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="CDSAcct"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="10"/>
+          <Order val="D"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="36"/>
+          <Column val="9"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="3" name="UrlIdentifier">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="UrlIdentifier"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="36"/>
+          <Column val="9"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="5" name="EmailSentDateTime">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="EmailSentDateTime"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="8"/>
+          <Column val="7"/>
+          <Order val="D"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="8"/>
+          <Order val="D"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_ContactTypeRepository" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="42" name="CDS_ContactTypeRepositoryCONVE">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="EffectiveFrom">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="8"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="EffectiveFrom"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EffectiveFrom" PIC_U="8" Size="8" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="EffectiveEnd">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="8"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="EffectiveEnd"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EffectiveEnd" PIC_U="8" Size="8" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ContactTypeId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ContactTypeId"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ContactTypeId" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="ContactTypeDescription">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ContactTypeDescription"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ContactTypeDescription" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="DisplayOrder">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="DisplayOrder"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="2"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="DisplayOrder" PIC_U="2" Size="2" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Display">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Display"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Display" PIC_U="1" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Tooltip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="250"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="250"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Tooltip"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Tooltip" PIC_U="250" Size="250" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="EffFrom_Id">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="EffFrom_Id"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="8"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="2"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="CDS_RemoveAllContactType" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="44" name="CDS_RemoveAllContactType">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="CDS_RAC_Year">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="CDS_RAC_Year"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CDS_RAC_Year" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="CDS_RAC_Account">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="6"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="CDS_RAC_Account"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CDS_RAC_Account" PIC_U="6" Size="6" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="CDS_RAC_UrlIdentifier">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="36"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="36"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="CDS_RAC_UrlIdentifier"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CDS_RAC_UrlIdentifier" PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="CDS_RAC_PersonID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="CDS_RAC_PersonID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="CDS_RAC_PersonID" PIC_U="2" Size="2" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="CDS_RAC_Index">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="CDS_RAC_Index"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="36"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="2"/>
+          <Column val="4"/>
           <Order val="A"/>
         </Segment>
       </Segments>

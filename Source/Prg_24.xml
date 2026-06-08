@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738665" _time="59275" date="05/25/2023" time="16:27:55"/>
+          <LastModified _date="739755" _time="49716" date="05/19/2026" time="13:48:36"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -446,9 +446,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738664" _time="36540" date="05/24/2023" time="10:09:00"/>
+            <LastModified _date="739755" _time="49716" date="05/19/2026" time="13:48:36"/>
           </Header>
-          <ItemIsn val="87"/>
+          <ItemIsn val="96"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="8"/>
@@ -663,6 +663,33 @@
                   <Picture id="157" valUnicode="30"/>
                   <StoredAs id="173" val="1"/>
                   <Size id="174" val="30"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+              <Column id="20" name="v-displayed minority owned">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="1"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="1"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+              <Column id="21" name="v-displayed veteran owned">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="1"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="1"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+              <Column id="22" name="v-displayed women owned">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="1"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="1"/>
                   <_Flip id="194"/>
                 </PropertyList>
               </Column>
@@ -1018,7 +1045,7 @@
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="20" Key="1" Mode="R" SortType="31" VIEW="19" VIEWS="20">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="20" Key="1" Mode="R" SortType="31" VIEW="19" VIEWS="23">
                     <DB comp="-1" obj="10"/>
                     <Condition val="Y"/>
                   </LNK>
@@ -1277,6 +1304,42 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
+                  <Select FieldID="88" FlowIsn="458" id="88">
+                    <Column val="29"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="89" FlowIsn="459" id="89">
+                    <Column val="30"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="90" FlowIsn="460" id="90">
+                    <Column val="31"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
                   <END_LINK FlowIsn="31"/>
                 </LogicLine>
                 <LogicLine>
@@ -1298,7 +1361,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FieldID="45" FlowIsn="33" Key="1" Mode="R" SortType="46" VIEW="40" VIEWS="22">
+                  <LNK Direction="A" EVL_CND="R" FieldID="45" FlowIsn="33" Key="1" Mode="R" SortType="46" VIEW="43" VIEWS="25">
                     <DB comp="-1" obj="13"/>
                     <Condition val="Y"/>
                   </LNK>
@@ -1583,6 +1646,42 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
+                  <Select FieldID="91" FlowIsn="554" id="91">
+                    <Column val="27"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="92" FlowIsn="555" id="92">
+                    <Column val="28"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="93" FlowIsn="556" id="93">
+                    <Column val="29"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
                   <END_LINK FlowIsn="46"/>
                 </LogicLine>
                 <LogicLine>
@@ -1786,6 +1885,42 @@
                 <LogicLine>
                   <Select FieldID="54" FlowIsn="190" id="54">
                     <Column val="9"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="94" FlowIsn="557" id="94">
+                    <Column val="20"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="95" FlowIsn="558" id="95">
+                    <Column val="21"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="96" FlowIsn="559" id="96">
+                    <Column val="22"/>
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
@@ -2003,6 +2138,39 @@
                   </Update>
                 </LogicLine>
                 <LogicLine>
+                  <Update FlowIsn="627">
+                    <FieldID val="94"/>
+                    <WithValue val="112"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="628">
+                    <FieldID val="95"/>
+                    <WithValue val="113"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="629">
+                    <FieldID val="96"/>
+                    <WithValue val="114"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
                   <BLOCK EndBlock="208" EndBlockSegment="208" FlowIsn="217" Type="E">
                     <Condition val="Y"/>
                     <Modifier val="B"/>
@@ -2189,6 +2357,39 @@
                   <Update FlowIsn="224">
                     <FieldID val="54"/>
                     <WithValue val="58"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="630">
+                    <FieldID val="94"/>
+                    <WithValue val="115"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="631">
+                    <FieldID val="95"/>
+                    <WithValue val="116"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="632">
+                    <FieldID val="96"/>
+                    <WithValue val="117"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -3429,6 +3630,9 @@
                   <MERGE_PARM Exp="11" PIC_U="100" TXT_U="website" id="6"/>
                   <MERGE_PARM Exp="12" PIC_U="3" TXT_U="familyown" id="7"/>
                   <MERGE_PARM Exp="13" PIC_U="30" TXT_U="entity" id="8"/>
+                  <MERGE_PARM Exp="100" PIC_U="3" TXT_U="minorityown" id="50"/>
+                  <MERGE_PARM Exp="101" PIC_U="3" TXT_U="veteranown" id="51"/>
+                  <MERGE_PARM Exp="102" PIC_U="3" TXT_U="womenown" id="52"/>
                   <MERGE_PARM Exp="14" PIC_U="12" TXT_U="newcompanyphone" id="9"/>
                   <MERGE_PARM Exp="15" PIC_U="12" TXT_U="newcompanyfax" id="10"/>
                   <MERGE_PARM Exp="70" PIC_U="70" TXT_U="newcompanyaddr1" id="30"/>
@@ -3455,6 +3659,15 @@
                   <MERGE_PARM Exp="40" PIC_U="8" TXT_U="entityllc" id="26"/>
                   <MERGE_PARM Exp="41" PIC_U="8" TXT_U="entitysole" id="27"/>
                   <MERGE_PARM Exp="42" PIC_U="8" TXT_U="entityother" id="28"/>
+                  <MERGE_PARM Exp="103" PIC_U="8" TXT_U="minorityownblank" id="53"/>
+                  <MERGE_PARM Exp="104" PIC_U="8" TXT_U="minorityownyes" id="54"/>
+                  <MERGE_PARM Exp="105" PIC_U="8" TXT_U="minorityownno" id="55"/>
+                  <MERGE_PARM Exp="106" PIC_U="8" TXT_U="veteranownblank" id="56"/>
+                  <MERGE_PARM Exp="107" PIC_U="8" TXT_U="veteranownyes" id="57"/>
+                  <MERGE_PARM Exp="108" PIC_U="8" TXT_U="veteranownno" id="58"/>
+                  <MERGE_PARM Exp="109" PIC_U="8" TXT_U="womenownblank" id="59"/>
+                  <MERGE_PARM Exp="110" PIC_U="8" TXT_U="womenownyes" id="60"/>
+                  <MERGE_PARM Exp="111" PIC_U="8" TXT_U="womenownno" id="61"/>
                 </TagsTable>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="Output Account Info"/>
@@ -4738,6 +4951,18 @@
               <ExpSyntax val="Trim({0,23})"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="100">
+              <ExpSyntax val="IF({0,88}='Y','Yes',IF({0,88}='N','No',''))"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="101">
+              <ExpSyntax val="IF({0,89}='Y','Yes',IF({0,89}='N','No',''))"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="102">
+              <ExpSyntax val="IF({0,90}='Y','Yes',IF({0,90}='N','No',''))"/>
+              <ExpAttribute val="A"/>
+            </Expression>
             <Expression id="14">
               <ExpSyntax val="IF(Trim({0,48})&lt;>'',Left({0,48},3)&amp;'-'&amp;MID({0,48},4,3)&amp;'-'&amp;MID({0,48},7,4),'')"/>
               <ExpAttribute val="A"/>
@@ -4840,6 +5065,42 @@
             </Expression>
             <Expression id="42">
               <ExpSyntax val="IF(Trim({0,54})='Other','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="103">
+              <ExpSyntax val="IF(Trim({0,94})='','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="104">
+              <ExpSyntax val="IF(Trim({0,94})='Y','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="105">
+              <ExpSyntax val="IF(Trim({0,94})='N','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="106">
+              <ExpSyntax val="IF(Trim({0,95})='','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="107">
+              <ExpSyntax val="IF(Trim({0,95})='Y','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="108">
+              <ExpSyntax val="IF(Trim({0,95})='N','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="109">
+              <ExpSyntax val="IF(Trim({0,96})='','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="110">
+              <ExpSyntax val="IF(Trim({0,96})='Y','Selected','')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="111">
+              <ExpSyntax val="IF(Trim({0,96})='N','Selected','')"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="22">
@@ -4950,6 +5211,18 @@
               <ExpSyntax val="{0,35}"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="112">
+              <ExpSyntax val="{0,91}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="113">
+              <ExpSyntax val="{0,92}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="114">
+              <ExpSyntax val="{0,93}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
             <Expression id="52">
               <ExpSyntax val="{0,17}"/>
               <ExpAttribute val="A"/>
@@ -5016,6 +5289,18 @@
             </Expression>
             <Expression id="58">
               <ExpSyntax val="{0,23}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="115">
+              <ExpSyntax val="{0,88}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="116">
+              <ExpSyntax val="{0,89}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="117">
+              <ExpSyntax val="{0,90}"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="59">

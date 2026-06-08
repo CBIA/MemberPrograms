@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739698" _time="48979" date="03/23/2026" time="13:36:19"/>
+          <LastModified _date="739764" _time="35197" date="05/28/2026" time="09:46:37"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -245,7 +245,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739698" _time="48979" date="03/23/2026" time="13:36:19"/>
+            <LastModified _date="739764" _time="35197" date="05/28/2026" time="09:46:37"/>
           </Header>
           <ItemIsn val="4"/>
           <Resource>
@@ -446,6 +446,18 @@
                   </CallTask>
                 </LogicLine>
                 <LogicLine>
+                  <Remark FlowIsn="18">
+                    <Type val="2"/>
+                    <Text val="5/28/26 new logic on advocacy/non-advocacy accounts with different"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="19">
+                    <Type val="2"/>
+                    <Text val="set of contact type.  also correct the retrieval method for FINANCE and HUMRES."/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
                   <CallTask FlowIsn="6">
                     <OperationType val="T"/>
                     <Event>
@@ -456,7 +468,7 @@
                     <Wait val="Y"/>
                     <SyncData val="N"/>
                     <RetainFocus val="N"/>
-                    <Condition val="Y"/>
+                    <Condition val="N"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </CallTask>
@@ -649,7 +661,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="738663" _time="47437" date="05/23/2023" time="13:10:37"/>
+              <LastModified _date="739764" _time="35105" date="05/28/2026" time="09:45:05"/>
             </Header>
             <ItemIsn val="7"/>
             <Resource>
@@ -1223,7 +1235,7 @@
             </TaskForms>
             <Expressions>
               <Expression id="1">
-                <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;false&quot;>&#xD;&#xA;  &lt;entity name=&quot;contact&quot;>&#xD;&#xA;    &lt;attribute name=&quot;parentcustomerid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;firstname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;lastname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;jobtitle&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;contactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;pa_contactnumber&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_name&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line3&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;emailaddress1&quot; />&#xD;&#xA;    &lt;order attribute=&quot;fullname&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentcustomerid&quot; operator=&quot;eq&quot; value=&quot;'&amp;Trim({2,2})&amp;'&quot; />&#xD;&#xA;    &lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_rostermember&quot; from=&quot;pa_customerid&quot; to=&quot;contactid&quot; link-type=&quot;inner&quot; alias=&quot;rm&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;        &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;in&quot;>&#xD;&#xA;&#x9;&#x9;&lt;value>TE&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>PRIMARY&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>DUEBIL&lt;/value>&#xD;&#xA;        &lt;/condition>&#xD;&#xA;      &lt;/filter>&#xD;&#xA;&#x9;&lt;attribute name=&quot;pa_rostercode&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;  &lt;/entity>&#xD;&#xA;&lt;/fetch>'"/>
+                <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;false&quot;>&#xD;&#xA;  &lt;entity name=&quot;contact&quot;>&#xD;&#xA;    &lt;attribute name=&quot;parentcustomerid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;firstname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;lastname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;jobtitle&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;contactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;pa_contactnumber&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_name&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line3&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;emailaddress1&quot; />&#xD;&#xA;    &lt;order attribute=&quot;fullname&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentcustomerid&quot; operator=&quot;eq&quot; value=&quot;'&amp;Trim({2,2})&amp;'&quot; />&#xD;&#xA;    &lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_rostermember&quot; from=&quot;pa_customerid&quot; to=&quot;contactid&quot; link-type=&quot;inner&quot; alias=&quot;rm&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;        &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;in&quot;>&#xD;&#xA;&#x9;&#x9;&lt;value>TE&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>PRIMARY&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>DUEBIL&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>HUMRES&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>FINANCE&lt;/value>&#xD;&#xA;        &lt;/condition>&#xD;&#xA;      &lt;/filter>&#xD;&#xA;&#x9;&lt;attribute name=&quot;pa_rostercode&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;  &lt;/entity>&#xD;&#xA;&lt;/fetch>'"/>
                 <ExpAttribute val="A"/>
               </Expression>
               <Expression id="2">
