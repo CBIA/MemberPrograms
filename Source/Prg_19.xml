@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Remove Current Contact Submit" ISN_2="1" LastIsn="34" id="19">
+        <Header Description="Remove Current Contact Submit" ISN_2="1" LastIsn="35" id="19">
           <Public val="RemoveContact"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739764" _time="59798" date="05/28/2026" time="16:36:38"/>
+          <LastModified _date="739812" _time="79624" date="07/15/2026" time="22:07:04"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -483,7 +483,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Read Account Info" ISN_2="2" LastIsn="31" id="19">
+          <Header Description="Read Account Info" ISN_2="2" LastIsn="34" id="19">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2393,7 +2393,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Read Contact Info" ISN_2="3" LastIsn="31" id="19">
+          <Header Description="Read Contact Info" ISN_2="3" LastIsn="34" id="19">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2406,7 +2406,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739764" _time="59798" date="05/28/2026" time="16:36:38"/>
+            <LastModified _date="739812" _time="79624" date="07/15/2026" time="22:07:04"/>
           </Header>
           <ItemIsn val="67"/>
           <Resource>
@@ -2582,12 +2582,52 @@
                   </BLOCK>
                 </LogicLine>
                 <LogicLine>
+                  <Remark FlowIsn="125">
+                    <Type val="2"/>
+                    <Text val="update a field in the new core record to indicate the person is marked for removal"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
                   <CallTask FlowIsn="113">
                     <OperationType val="T"/>
                     <Event>
                       <EventType val="N"/>
                     </Event>
                     <TaskID comp="-1" obj="27"/>
+                    <Lock val="N"/>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="126">
+                    <Type val="2"/>
+                    <Text val="add a remove all contact type rec so that the CDSForm program logic will not count the contact type"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="127">
+                    <Type val="2"/>
+                    <Text val="from the contact core table for the sake of determining if exactlyl one TE, one Primary, and one mbr dues"/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="128">
+                    <Type val="2"/>
+                    <Text val="is picked."/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="124">
+                    <OperationType val="T"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="35"/>
                     <Lock val="N"/>
                     <Wait val="Y"/>
                     <SyncData val="N"/>
@@ -2611,6 +2651,22 @@
                       <EventType val="N"/>
                     </Event>
                     <TaskID comp="-1" obj="28"/>
+                    <Lock val="N"/>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <CallTask FlowIsn="123">
+                    <OperationType val="T"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="34"/>
                     <Lock val="N"/>
                     <Wait val="Y"/>
                     <SyncData val="N"/>
@@ -2648,22 +2704,6 @@
                     <RetainFocus val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="123">
-                    <OperationType val="T"/>
-                    <Event>
-                      <EventType val="N"/>
-                    </Event>
-                    <TaskID comp="-1" obj="34"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="S"/>
                     <Direction val="C"/>
                   </CallTask>
                 </LogicLine>
@@ -2707,7 +2747,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
           <Task MainProgram="N">
-            <Header Description="Link Write new core" ISN_2="27" LastIsn="31" id="19">
+            <Header Description="Link Write new core" ISN_2="27" LastIsn="34" id="19">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -3223,7 +3263,206 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Delete contactnew core record" ISN_2="28" LastIsn="31" id="19">
+            <Header Description="Link Write remove all contact type rec" ISN_2="35" id="19">
+              <ExecutionRight comp="-1"/>
+              <Resident val="N"/>
+              <SQL val="N"/>
+              <ReturnValue>
+                <ReturnValueAttr/>
+                <ParametersAttributes/>
+              </ReturnValue>
+              <SqlWhereExist val="N"/>
+              <TaskType val="B"/>
+              <External val="N"/>
+              <FormType val="N"/>
+              <DotNetObjectExists val="N"/>
+              <LastModified _date="739812" _time="79471" date="07/15/2026" time="22:04:31"/>
+            </Header>
+            <ItemIsn val="9"/>
+            <Resource>
+              <DB id="1">
+                <DataObject comp="-1" obj="44"/>
+                <Access val="W"/>
+                <Share val="W"/>
+                <Open val="N"/>
+                <Cache val="Y"/>
+                <IdentifyRowModifications val="84"/>
+              </DB>
+              <Columns/>
+            </Resource>
+            <Information>
+              <Key>
+                <Mode val="N"/>
+              </Key>
+              <DB comp="-1"/>
+              <Sort>
+                <CLS val="A"/>
+              </Sort>
+              <ForceRecordDelete DEL="N"/>
+              <EndTaskCondition val="Y"/>
+              <EvaluateEndCondition val="A"/>
+              <InitialMode val="M"/>
+              <Locate Direction="A"/>
+              <Range Direction="A"/>
+              <VarRange/>
+              <TaskProperties>
+                <SelectionTable val="N"/>
+                <ConfirmUpdate CNFU="N"/>
+                <ConfirmCancel val="N"/>
+                <ErrorStrategy val="A"/>
+                <LockingStrategy val="I"/>
+                <CacheStrategy val="N"/>
+                <ForceRecordSuffix val="N"/>
+                <TransactionMode val="W"/>
+                <TransactionBegin val="T"/>
+                <PreloadView val="N"/>
+                <AllowEmptyDataview val="N"/>
+                <KeepCreatedContext val="N"/>
+              </TaskProperties>
+              <SIDE_WIN>
+                <AllowOptions val="N"/>
+                <AllowQuery val="Y"/>
+                <AllowModify val="Y"/>
+                <AllowCreate val="Y"/>
+                <AllowDelete val="Y"/>
+                <AllowLocate val="Y"/>
+                <AllowRange val="Y"/>
+                <AllowIndexChange val="Y"/>
+                <AllowSorting val="Y"/>
+                <AllowIOFiles val="Y"/>
+                <RecordCycle val="Y"/>
+                <AllowEvents val="Y"/>
+                <AllowIndexOptimization val="Y"/>
+                <AllowLocationInQuery val="Y"/>
+                <AllowPrintingData val="N"/>
+              </SIDE_WIN>
+              <WIN>
+                <OpenTaskWindow val="N"/>
+                <CloseTaskWindow val="Y"/>
+                <ForegroundWindow val="Y"/>
+                <FlipFld val="N"/>
+                <RefreshTaskWindow ReturnValue="N"/>
+              </WIN>
+              <BOX>
+                <Direction val="V"/>
+              </BOX>
+            </Information>
+            <TaskLogic>
+              <LogicUnit id="1" propagate="78">
+                <Level val="R"/>
+                <Type val="M"/>
+                <Scope val="S"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="S"/>
+                </Event>
+                <LogicLines>
+                  <LogicLine>
+                    <DATAVIEW_SRC FlowIsn="1" Type="M">
+                      <Condition val="N"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </DATAVIEW_SRC>
+                  </LogicLine>
+                  <LogicLine>
+                    <LNK Direction="A" EVL_CND="R" FlowIsn="2" Key="1" Mode="W" SortType="3" VIEW="1" VIEWS="4">
+                      <DB comp="-1" obj="44"/>
+                      <Condition val="Y"/>
+                    </LNK>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="4" FlowIsn="7" id="4">
+                      <ASS val="1"/>
+                      <Column val="1"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <Locate MAX="1" MIN="1"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="3" FlowIsn="6" id="3">
+                      <ASS val="2"/>
+                      <Column val="2"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <Locate MAX="2" MIN="2"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="2" FlowIsn="5" id="2">
+                      <ASS val="3"/>
+                      <Column val="3"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <Locate MAX="3" MIN="3"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="1" FlowIsn="4" id="1">
+                      <ASS val="4"/>
+                      <Column val="4"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <Locate MAX="4" MIN="4"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <END_LINK FlowIsn="3"/>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
+            </TaskLogic>
+            <TaskForms>
+              <FormEntry id="1">
+                <PropertyList model="FORM_GUI0">
+                  <_Comment id="218"/>
+                  <FormName id="311" valUnicode="Link Write remove all contact type rec"/>
+                </PropertyList>
+              </FormEntry>
+            </TaskForms>
+            <Expressions>
+              <Expression id="1">
+                <ExpSyntax val="{3,1}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="2">
+                <ExpSyntax val="{3,2}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="3">
+                <ExpSyntax val="{3,3}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="4">
+                <ExpSyntax val="{3,4}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+            </Expressions>
+          </Task>
+          <Task MainProgram="N">
+            <Header Description="Delete contactnew core record" ISN_2="28" LastIsn="34" id="19">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -3414,7 +3653,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Delete contactnew contact type record" ISN_2="31" LastIsn="31" id="19">
+            <Header Description="Delete contactnew contact type record" ISN_2="31" LastIsn="34" id="19">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -3618,7 +3857,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739764" _time="59775" date="05/28/2026" time="16:36:15"/>
+              <LastModified _date="739812" _time="79312" date="07/15/2026" time="22:01:52"/>
             </Header>
             <ItemIsn val="4"/>
             <Resource>

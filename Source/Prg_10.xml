@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739764" _time="35197" date="05/28/2026" time="09:46:37"/>
+          <LastModified _date="739776" _time="37124" date="06/09/2026" time="10:18:44"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -245,9 +245,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739764" _time="35197" date="05/28/2026" time="09:46:37"/>
+            <LastModified _date="739776" _time="36917" date="06/09/2026" time="10:15:17"/>
           </Header>
-          <ItemIsn val="4"/>
+          <ItemIsn val="5"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="4"/>
@@ -388,6 +388,18 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <_DitIndexForToolkit val="4"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="5" FlowIsn="23" id="5">
+                    <Column val="33"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -661,7 +673,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739764" _time="35105" date="05/28/2026" time="09:45:05"/>
+              <LastModified _date="739776" _time="37124" date="06/09/2026" time="10:18:44"/>
             </Header>
             <ItemIsn val="7"/>
             <Resource>
@@ -945,6 +957,13 @@
                 </Event>
                 <LogicLines>
                   <LogicLine>
+                    <BLOCK EndBlock="34" EndBlockSegment="35" FlowIsn="33" Type="I">
+                      <Condition Exp="13"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </BLOCK>
+                  </LogicLine>
+                  <LogicLine>
                     <Update FlowIsn="13">
                       <FieldID val="1"/>
                       <WithValue val="1"/>
@@ -954,6 +973,27 @@
                       <Modifier val="B"/>
                       <Direction val="C"/>
                     </Update>
+                  </LogicLine>
+                  <LogicLine>
+                    <BLOCK EndBlock="34" EndBlockSegment="34" FlowIsn="35" Type="E">
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </BLOCK>
+                  </LogicLine>
+                  <LogicLine>
+                    <Update FlowIsn="36">
+                      <FieldID val="1"/>
+                      <WithValue val="14"/>
+                      <Incremental val="N"/>
+                      <ForcedUpdate val="Y"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </Update>
+                  </LogicLine>
+                  <LogicLine>
+                    <END_BLK FlowIsn="34"/>
                   </LogicLine>
                   <LogicLine>
                     <Remark FlowIsn="14">
@@ -1235,6 +1275,10 @@
             </TaskForms>
             <Expressions>
               <Expression id="1">
+                <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;false&quot;>&#xD;&#xA;  &lt;entity name=&quot;contact&quot;>&#xD;&#xA;    &lt;attribute name=&quot;parentcustomerid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;firstname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;lastname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;jobtitle&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;contactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;pa_contactnumber&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_name&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line3&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;emailaddress1&quot; />&#xD;&#xA;    &lt;order attribute=&quot;fullname&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentcustomerid&quot; operator=&quot;eq&quot; value=&quot;'&amp;Trim({2,2})&amp;'&quot; />&#xD;&#xA;    &lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_rostermember&quot; from=&quot;pa_customerid&quot; to=&quot;contactid&quot; link-type=&quot;inner&quot; alias=&quot;rm&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;        &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;in&quot;>&#xD;&#xA;&#x9;&#x9;&lt;value>TE&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>PRIMARY&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>DUEBIL&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>HUMRES&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>PUBPOL&lt;/value>&#xD;&#xA;        &lt;/condition>&#xD;&#xA;      &lt;/filter>&#xD;&#xA;&#x9;&lt;attribute name=&quot;pa_rostercode&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;  &lt;/entity>&#xD;&#xA;&lt;/fetch>'"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="14">
                 <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;false&quot;>&#xD;&#xA;  &lt;entity name=&quot;contact&quot;>&#xD;&#xA;    &lt;attribute name=&quot;parentcustomerid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;firstname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;lastname&quot; />&#xD;&#xA;    &lt;attribute name=&quot;jobtitle&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;contactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;pa_contactnumber&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_name&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line3&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;emailaddress1&quot; />&#xD;&#xA;    &lt;order attribute=&quot;fullname&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentcustomerid&quot; operator=&quot;eq&quot; value=&quot;'&amp;Trim({2,2})&amp;'&quot; />&#xD;&#xA;    &lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_rostermember&quot; from=&quot;pa_customerid&quot; to=&quot;contactid&quot; link-type=&quot;inner&quot; alias=&quot;rm&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;        &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;in&quot;>&#xD;&#xA;&#x9;&#x9;&lt;value>TE&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>PRIMARY&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>DUEBIL&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>HUMRES&lt;/value>&#xD;&#xA;&#x9;&#x9;&lt;value>FINANCE&lt;/value>&#xD;&#xA;        &lt;/condition>&#xD;&#xA;      &lt;/filter>&#xD;&#xA;&#x9;&lt;attribute name=&quot;pa_rostercode&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;  &lt;/entity>&#xD;&#xA;&lt;/fetch>'"/>
                 <ExpAttribute val="A"/>
               </Expression>
@@ -1273,6 +1317,10 @@
               <Expression id="12">
                 <ExpSyntax val="Time()"/>
                 <ExpAttribute val="T"/>
+              </Expression>
+              <Expression id="13">
+                <ExpSyntax val="{2,5}='YES'"/>
+                <ExpAttribute val="B"/>
               </Expression>
             </Expressions>
             <Task MainProgram="N">

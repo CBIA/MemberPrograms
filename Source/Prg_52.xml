@@ -27,7 +27,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738719" _time="59644" date="07/18/2023" time="16:34:04"/>
+          <LastModified _date="739812" _time="42655" date="07/15/2026" time="11:50:55"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -174,7 +174,7 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="Y"/>
+                  <Condition val="N"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -215,7 +215,7 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="Y"/>
+                  <Condition val="N"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -257,7 +257,7 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="Y"/>
+                  <Condition val="N"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -303,7 +303,7 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="Y"/>
+                  <Condition val="N"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>

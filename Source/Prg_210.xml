@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CDS MAIN FORM" ISN_2="1" LastIsn="40" id="14">
-          <Public val="CDSForm"/>
+        <Header Description="CDS MAIN FORM" ISN_2="1" LastIsn="40" id="210">
+          <Public val="CDSFormBKUP"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -33,7 +33,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739812" _time="55949" date="07/15/2026" time="15:32:29"/>
+          <LastModified _date="739812" _time="55972" date="07/15/2026" time="15:32:52"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -219,7 +219,7 @@
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="Y"/>
+            <AllowOptions val="N"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -236,7 +236,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="Y"/>
+            <OpenTaskWindow val="N"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -865,7 +865,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Read Account Info" ISN_2="2" LastIsn="40" id="14">
+          <Header Description="Read Account Info" ISN_2="2" LastIsn="40" id="210">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -878,7 +878,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739812" _time="53189" date="07/15/2026" time="14:46:29"/>
+            <LastModified _date="739764" _time="32397" date="05/28/2026" time="08:59:57"/>
           </Header>
           <ItemIsn val="73"/>
           <Resource>
@@ -3590,7 +3590,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Read Contact Info" ISN_2="3" LastIsn="40" id="14">
+          <Header Description="Read Contact Info" ISN_2="3" LastIsn="40" id="210">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3603,7 +3603,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739812" _time="55746" date="07/15/2026" time="15:29:06"/>
+            <LastModified _date="739768" _time="34097" date="06/01/2026" time="09:28:17"/>
           </Header>
           <ItemIsn val="57"/>
           <Resource>
@@ -3739,7 +3739,7 @@
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
-              <AllowOptions val="Y"/>
+              <AllowOptions val="N"/>
               <AllowQuery val="Y"/>
               <AllowModify val="Y"/>
               <AllowCreate val="Y"/>
@@ -3812,7 +3812,7 @@
                     <INT_RCMP_INFO>
                       <v>23</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="10"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3829,7 +3829,7 @@
                     <INT_RCMP_INFO>
                       <v>23</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="16"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3845,7 +3845,7 @@
                     <INT_RCMP_INFO>
                       <v>23</v>
                     </INT_RCMP_INFO>
-                    <_DitIndexForToolkit val="22"/>
+                    <_DitIndexForToolkit val="8"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3858,7 +3858,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="27"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3871,7 +3871,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="31"/>
+                    <_DitIndexForToolkit val="12"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3884,7 +3884,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="35"/>
+                    <_DitIndexForToolkit val="14"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3897,7 +3897,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="39"/>
+                    <_DitIndexForToolkit val="16"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3910,7 +3910,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="43"/>
+                    <_DitIndexForToolkit val="18"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3923,7 +3923,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="47"/>
+                    <_DitIndexForToolkit val="20"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3936,7 +3936,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="51"/>
+                    <_DitIndexForToolkit val="22"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3949,7 +3949,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="4"/>
+                    <_DitIndexForToolkit val="24"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3962,7 +3962,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="12"/>
+                    <_DitIndexForToolkit val="26"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3975,7 +3975,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="18"/>
+                    <_DitIndexForToolkit val="28"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -3988,7 +3988,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="24"/>
+                    <_DitIndexForToolkit val="30"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4001,7 +4001,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="29"/>
+                    <_DitIndexForToolkit val="34"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4014,7 +4014,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="33"/>
+                    <_DitIndexForToolkit val="38"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4033,12 +4033,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <INT_DIT_INFO>
-                      <v>121</v>
-                      <v>122</v>
-                      <v>123</v>
-                    </INT_DIT_INFO>
-                    <_DitIndexForToolkit val="37"/>
+                    <_DitIndexForToolkit val="42"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4058,7 +4053,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MAX="4" MIN="4"/>
-                    <_DitIndexForToolkit val="41"/>
+                    <_DitIndexForToolkit val="46"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4072,7 +4067,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MAX="5" MIN="5"/>
-                    <_DitIndexForToolkit val="45"/>
+                    <_DitIndexForToolkit val="50"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4086,7 +4081,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MAX="6" MIN="6"/>
-                    <_DitIndexForToolkit val="63"/>
+                    <_DitIndexForToolkit val="54"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4100,7 +4095,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Locate MAX="7" MIN="7"/>
-                    <_DitIndexForToolkit val="67"/>
+                    <_DitIndexForToolkit val="58"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4113,7 +4108,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="71"/>
+                    <_DitIndexForToolkit val="62"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4126,7 +4121,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="75"/>
+                    <_DitIndexForToolkit val="66"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4139,7 +4134,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="77"/>
+                    <_DitIndexForToolkit val="68"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4152,7 +4147,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="79"/>
+                    <_DitIndexForToolkit val="70"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4165,7 +4160,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="81"/>
+                    <_DitIndexForToolkit val="72"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4178,7 +4173,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="83"/>
+                    <_DitIndexForToolkit val="74"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4191,7 +4186,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="85"/>
+                    <_DitIndexForToolkit val="76"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4204,7 +4199,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="87"/>
+                    <_DitIndexForToolkit val="78"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4217,7 +4212,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="89"/>
+                    <_DitIndexForToolkit val="80"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4230,7 +4225,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="91"/>
+                    <_DitIndexForToolkit val="82"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4243,7 +4238,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="93"/>
+                    <_DitIndexForToolkit val="84"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4256,11 +4251,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <INT_DIT_INFO>
-                      <v>121</v>
-                      <v>123</v>
-                    </INT_DIT_INFO>
-                    <_DitIndexForToolkit val="95"/>
+                    <_DitIndexForToolkit val="86"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4273,7 +4264,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="97"/>
+                    <_DitIndexForToolkit val="88"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -4295,7 +4286,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="49"/>
+                    <_DitIndexForToolkit val="32"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4308,7 +4299,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="53"/>
+                    <_DitIndexForToolkit val="36"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4321,7 +4312,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="55"/>
+                    <_DitIndexForToolkit val="40"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4334,7 +4325,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="57"/>
+                    <_DitIndexForToolkit val="44"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4347,7 +4338,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="59"/>
+                    <_DitIndexForToolkit val="48"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4360,7 +4351,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="61"/>
+                    <_DitIndexForToolkit val="52"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4373,7 +4364,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="65"/>
+                    <_DitIndexForToolkit val="56"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4386,7 +4377,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="69"/>
+                    <_DitIndexForToolkit val="60"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4399,7 +4390,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="73"/>
+                    <_DitIndexForToolkit val="64"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -4554,12 +4545,12 @@
                   </FormIO>
                 </LogicLine>
                 <LogicLine>
-                  <CallTask FlowIsn="93">
+                  <CallTask FlowIsn="73">
                     <OperationType val="T"/>
                     <Event>
                       <EventType val="N"/>
                     </Event>
-                    <TaskID comp="-1" obj="17"/>
+                    <TaskID comp="-1" obj="7"/>
                     <Lock val="N"/>
                     <Wait val="Y"/>
                     <SyncData val="N"/>
@@ -4570,12 +4561,12 @@
                   </CallTask>
                 </LogicLine>
                 <LogicLine>
-                  <CallTask FlowIsn="73">
+                  <CallTask FlowIsn="93">
                     <OperationType val="T"/>
                     <Event>
                       <EventType val="N"/>
                     </Event>
-                    <TaskID comp="-1" obj="7"/>
+                    <TaskID comp="-1" obj="17"/>
                     <Lock val="N"/>
                     <Wait val="Y"/>
                     <SyncData val="N"/>
@@ -4599,7 +4590,7 @@
                 </LogicLine>
                 <LogicLine>
                   <BLOCK EndBlock="179" EndBlockSegment="179" FlowIsn="174" Type="I">
-                    <Condition val="Y"/>
+                    <Condition Exp="48"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </BLOCK>
@@ -4790,11 +4781,10 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="123" _last_test_id="123" id="1">
+            <FormEntry _last_isn="114" _last_test_id="114" id="1">
               <PropertyList model="FORM_GUI0">
-                <Y id="22" val="166"/>
-                <Width id="23" val="1023"/>
-                <Height id="24" val="214"/>
+                <Width id="23" val="881"/>
+                <Height id="24" val="380"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="Read Contact Info"/>
               </PropertyList>
@@ -4825,89 +4815,6 @@
                   <TabOrder id="314" val="1"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="82" id="82">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_Addr2:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="9"/>
-                  <Width id="23" val="72"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="38" id="38">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="12"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="9"/>
-                  <Width id="23" val="144"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="12" id="43"/>
-                  <ControlName id="46" val="ContactSS_Addr2"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="2"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="116" id="116">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-account te count"/>
-                  <X id="21" val="694"/>
-                  <Y id="22" val="9"/>
-                  <Width id="23" val="74"/>
-                  <Height id="24" val="9"/>
-                  <Font id="50" val="1"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="1" _test_id="115" id="115">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="16" Parent="1"/>
-                  </Model>
-                  <X id="21" val="772"/>
-                  <Y id="22" val="9"/>
-                  <Width id="23" val="13"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="16" Parent="1" id="43"/>
-                  <ControlName id="46" val="v-account te count"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="3"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="118" id="118">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-account primary count"/>
-                  <X id="21" val="694"/>
-                  <Y id="22" val="20"/>
-                  <Width id="23" val="93"/>
-                  <Height id="24" val="9"/>
-                  <Font id="50" val="1"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="1" _test_id="117" id="117">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="17" Parent="1"/>
-                  </Model>
-                  <X id="21" val="791"/>
-                  <Y id="22" val="20"/>
-                  <Width id="23" val="13"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="17" Parent="1" id="43"/>
-                  <ControlName id="46" val="v-account primary count"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="4"/>
-                </PropertyList>
-              </Control>
               <Control _test_id="72" id="72">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="ContactSS_AccountNo:"/>
@@ -4932,62 +4839,7 @@
                   <Data FieldID="2" id="43"/>
                   <ControlName id="46" val="ContactSS_AccountNo"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="5"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="83" id="83">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_City:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="26"/>
-                  <Width id="23" val="63"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="39" id="39">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="13"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="26"/>
-                  <Width id="23" val="32"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="13" id="43"/>
-                  <ControlName id="46" val="ContactSS_City"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="6"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="120" id="120">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-account dues bill count"/>
-                  <X id="21" val="694"/>
-                  <Y id="22" val="31"/>
-                  <Width id="23" val="97"/>
-                  <Height id="24" val="9"/>
-                  <Font id="50" val="1"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="1" _test_id="119" id="119">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="18" Parent="1"/>
-                  </Model>
-                  <X id="21" val="795"/>
-                  <Y id="22" val="31"/>
-                  <Width id="23" val="13"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="18" Parent="1" id="43"/>
-                  <ControlName id="46" val="v-account dues bill count"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="7"/>
+                  <TabOrder id="314" val="2"/>
                 </PropertyList>
               </Control>
               <Control _test_id="73" id="73">
@@ -5014,60 +4866,7 @@
                   <Data FieldID="3" id="43"/>
                   <ControlName id="46" val="ContactSS_UrlIdentifier"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="8"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="84" id="84">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_State:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="44"/>
-                  <Width id="23" val="70"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="40" id="40">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="14"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="44"/>
-                  <Width id="23" val="14"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="14" id="43"/>
-                  <ControlName id="46" val="ContactSS_State"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="9"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="128" _test_id="121" id="121">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <X id="21" val="694"/>
-                  <Y id="22" val="44"/>
-                  <Width id="23" val="26"/>
-                  <Height id="24" val="10"/>
-                  <Data Exp="48" id="43"/>
-                  <Format id="82" valUnicode="5"/>
-                  <Attribute id="83" val="66"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="10"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="128" _test_id="122" id="122">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <X id="21" val="694"/>
-                  <Y id="22" val="60"/>
-                  <Width id="23" val="26"/>
-                  <Height id="24" val="10"/>
-                  <Data Exp="53" id="43"/>
-                  <Format id="82" valUnicode="5"/>
-                  <Attribute id="83" val="66"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="11"/>
+                  <TabOrder id="314" val="3"/>
                 </PropertyList>
               </Control>
               <Control _test_id="74" id="74">
@@ -5094,47 +4893,7 @@
                   <Data FieldID="4" id="43"/>
                   <ControlName id="46" val="ContactSS_PersonID"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="12"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="85" id="85">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_Zip:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="63"/>
-                  <Width id="23" val="62"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="41" id="41">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="15"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="63"/>
-                  <Width id="23" val="59"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="15" id="43"/>
-                  <ControlName id="46" val="ContactSS_Zip"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="13"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="128" _test_id="123" id="123">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <X id="21" val="694"/>
-                  <Y id="22" val="74"/>
-                  <Width id="23" val="26"/>
-                  <Height id="24" val="10"/>
-                  <Data Exp="54" id="43"/>
-                  <Format id="82" valUnicode="5"/>
-                  <Attribute id="83" val="66"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="14"/>
+                  <TabOrder id="314" val="4"/>
                 </PropertyList>
               </Control>
               <Control _test_id="75" id="75">
@@ -5161,34 +4920,7 @@
                   <Data FieldID="5" id="43"/>
                   <ControlName id="46" val="ContactSS_Contactid"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="15"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="86" id="86">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_Phone:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="81"/>
-                  <Width id="23" val="74"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="42" id="42">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="16"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="81"/>
-                  <Width id="23" val="171"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="16" id="43"/>
-                  <ControlName id="46" val="ContactSS_Phone"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="16"/>
+                  <TabOrder id="314" val="5"/>
                 </PropertyList>
               </Control>
               <Control _test_id="76" id="76">
@@ -5215,34 +4947,7 @@
                   <Data FieldID="6" id="43"/>
                   <ControlName id="46" val="ContactSS_ContactNumber"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="17"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="87" id="87">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactSS_Email:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="98"/>
-                  <Width id="23" val="70"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="43" id="43">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="17"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="98"/>
-                  <Width id="23" val="312"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="17" id="43"/>
-                  <ControlName id="46" val="ContactSS_Email"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="18"/>
+                  <TabOrder id="314" val="6"/>
                 </PropertyList>
               </Control>
               <Control _test_id="77" id="77">
@@ -5269,34 +4974,7 @@
                   <Data FieldID="7" id="43"/>
                   <ControlName id="46" val="ContactSS_FirstName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="19"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="88" id="88">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-has new core record:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="116"/>
-                  <Width id="23" val="89"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control PDOD="192" _test_id="44" id="44">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="50"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="116"/>
-                  <Width id="23" val="31"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="50" id="43"/>
-                  <ControlName id="46" val="v-has new core record"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="20"/>
+                  <TabOrder id="314" val="7"/>
                 </PropertyList>
               </Control>
               <Control _test_id="78" id="78">
@@ -5323,35 +5001,7 @@
                   <Data FieldID="8" id="43"/>
                   <ControlName id="46" val="ContactSS_LastName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="21"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="89" id="89">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactNew_Year:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="135"/>
-                  <Width id="23" val="74"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="45" id="45">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="25"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="135"/>
-                  <Width id="23" val="26"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="25" id="43"/>
-                  <ControlName id="46" val="ContactNew_Year"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="22"/>
-                  <AllowParking id="315"/>
+                  <TabOrder id="314" val="8"/>
                 </PropertyList>
               </Control>
               <Control _test_id="79" id="79">
@@ -5378,35 +5028,7 @@
                   <Data FieldID="9" id="43"/>
                   <ControlName id="46" val="ContactSS_Title"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="23"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="90" id="90">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="ContactNew_AccountNo:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="153"/>
-                  <Width id="23" val="99"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="46" id="46">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="24"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="153"/>
-                  <Width id="23" val="37"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="24" id="43"/>
-                  <ControlName id="46" val="ContactNew_AccountNo"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="24"/>
-                  <AllowParking id="315"/>
+                  <TabOrder id="314" val="9"/>
                 </PropertyList>
               </Control>
               <Control _test_id="80" id="80">
@@ -5433,34 +5055,7 @@
                   <Data FieldID="10" id="43"/>
                   <ControlName id="46" val="ContactSS_CompanyName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="25"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="106" id="106">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-curr list SQL IN statement:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="170"/>
-                  <Width id="23" val="107"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="62" id="62">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="45"/>
-                  </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="170"/>
-                  <Width id="23" val="261"/>
-                  <Height id="24" val="10"/>
-                  <Data FieldID="45" id="43"/>
-                  <ControlName id="46" val="v-curr list SQL IN statement"/>
-                  <_Orientation id="143"/>
-                  <TabOrder id="314" val="26"/>
+                  <TabOrder id="314" val="10"/>
                 </PropertyList>
               </Control>
               <Control _test_id="81" id="81">
@@ -5487,14 +5082,176 @@
                   <Data FieldID="11" id="43"/>
                   <ControlName id="46" val="ContactSS_Addr1"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="27"/>
+                  <TabOrder id="314" val="11"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="82" id="82">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_Addr2:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="206"/>
+                  <Width id="23" val="72"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="38" id="38">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="12"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="206"/>
+                  <Width id="23" val="144"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="12" id="43"/>
+                  <ControlName id="46" val="ContactSS_Addr2"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="12"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="83" id="83">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_City:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="224"/>
+                  <Width id="23" val="63"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="39" id="39">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="13"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="224"/>
+                  <Width id="23" val="32"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="13" id="43"/>
+                  <ControlName id="46" val="ContactSS_City"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="13"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="84" id="84">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_State:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="242"/>
+                  <Width id="23" val="70"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="40" id="40">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="14"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="242"/>
+                  <Width id="23" val="14"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="14" id="43"/>
+                  <ControlName id="46" val="ContactSS_State"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="14"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="85" id="85">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_Zip:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="260"/>
+                  <Width id="23" val="62"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="41" id="41">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="15"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="260"/>
+                  <Width id="23" val="59"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="15" id="43"/>
+                  <ControlName id="46" val="ContactSS_Zip"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="15"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="106" id="106">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="v-curr list SQL IN statement:"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="260"/>
+                  <Width id="23" val="107"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="62" id="62">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="45"/>
+                  </Model>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="260"/>
+                  <Width id="23" val="261"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="45" id="43"/>
+                  <ControlName id="46" val="v-curr list SQL IN statement"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="16"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="86" id="86">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_Phone:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="278"/>
+                  <Width id="23" val="74"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="42" id="42">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="16"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="278"/>
+                  <Width id="23" val="171"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="16" id="43"/>
+                  <ControlName id="46" val="ContactSS_Phone"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="17"/>
                 </PropertyList>
               </Control>
               <Control _test_id="107" id="107">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-curr contact type list:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="188"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="278"/>
                   <Width id="23" val="87"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
@@ -5507,21 +5264,48 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="46"/>
                   </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="188"/>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="278"/>
                   <Width id="23" val="400"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="46" id="43"/>
                   <ControlName id="46" val="v-curr contact type list"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="28"/>
+                  <TabOrder id="314" val="18"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="87" id="87">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactSS_Email:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="296"/>
+                  <Width id="23" val="70"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="43" id="43">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="17"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="296"/>
+                  <Width id="23" val="312"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="17" id="43"/>
+                  <ControlName id="46" val="ContactSS_Email"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="19"/>
                 </PropertyList>
               </Control>
               <Control _test_id="108" id="108">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-new list SQL IN statement:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="206"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="296"/>
                   <Width id="23" val="109"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
@@ -5534,21 +5318,48 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="48"/>
                   </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="206"/>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="296"/>
                   <Width id="23" val="261"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="48" id="43"/>
                   <ControlName id="46" val="v-new list SQL IN statement"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="29"/>
+                  <TabOrder id="314" val="20"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="88" id="88">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="v-has new core record:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="314"/>
+                  <Width id="23" val="89"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="192" _test_id="44" id="44">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="50"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="314"/>
+                  <Width id="23" val="31"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="50" id="43"/>
+                  <ControlName id="46" val="v-has new core record"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="21"/>
                 </PropertyList>
               </Control>
               <Control _test_id="109" id="109">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-new contact type list:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="224"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="314"/>
                   <Width id="23" val="89"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
@@ -5561,21 +5372,49 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="49"/>
                   </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="224"/>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="314"/>
                   <Width id="23" val="400"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="49" id="43"/>
                   <ControlName id="46" val="v-new contact type list"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="30"/>
+                  <TabOrder id="314" val="22"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="89" id="89">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactNew_Year:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="332"/>
+                  <Width id="23" val="74"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="45" id="45">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="25"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="332"/>
+                  <Width id="23" val="26"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="25" id="43"/>
+                  <ControlName id="46" val="ContactNew_Year"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="23"/>
+                  <AllowParking id="315"/>
                 </PropertyList>
               </Control>
               <Control _test_id="110" id="110">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-has new contact type rec:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="242"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="332"/>
                   <Width id="23" val="107"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
@@ -5588,21 +5427,49 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="51"/>
                   </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="242"/>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="332"/>
                   <Width id="23" val="31"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="51" id="43"/>
                   <ControlName id="46" val="v-has new contact type rec"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="31"/>
+                  <TabOrder id="314" val="24"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="90" id="90">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="ContactNew_AccountNo:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="350"/>
+                  <Width id="23" val="99"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="46" id="46">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="24"/>
+                  </Model>
+                  <X id="21" val="126"/>
+                  <Y id="22" val="350"/>
+                  <Width id="23" val="37"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="24" id="43"/>
+                  <ControlName id="46" val="ContactNew_AccountNo"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="25"/>
+                  <AllowParking id="315"/>
                 </PropertyList>
               </Control>
               <Control _test_id="111" id="111">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-has remove all cont type rec:"/>
-                  <X id="21" val="382"/>
-                  <Y id="22" val="260"/>
+                  <X id="21" val="528"/>
+                  <Y id="22" val="350"/>
                   <Width id="23" val="118"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
@@ -5615,14 +5482,14 @@
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="57"/>
                   </Model>
-                  <X id="21" val="505"/>
-                  <Y id="22" val="260"/>
+                  <X id="21" val="650"/>
+                  <Y id="22" val="350"/>
                   <Width id="23" val="31"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="57" id="43"/>
                   <ControlName id="46" val="v-has remove all cont type rec"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="32"/>
+                  <TabOrder id="314" val="26"/>
                 </PropertyList>
               </Control>
               <Control _test_id="91" id="91">
@@ -5649,7 +5516,7 @@
                   <Data FieldID="23" id="43"/>
                   <ControlName id="46" val="ContactNew_UrlIdentifier"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="33"/>
+                  <TabOrder id="314" val="27"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5677,7 +5544,7 @@
                   <Data FieldID="52" id="43"/>
                   <ControlName id="46" val="v-contact is te"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="34"/>
+                  <TabOrder id="314" val="28"/>
                 </PropertyList>
               </Control>
               <Control _test_id="92" id="92">
@@ -5704,7 +5571,7 @@
                   <Data FieldID="22" id="43"/>
                   <ControlName id="46" val="ContactNew_PersonID"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="35"/>
+                  <TabOrder id="314" val="29"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5732,7 +5599,7 @@
                   <Data FieldID="53" id="43"/>
                   <ControlName id="46" val="v-contact is primary"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="36"/>
+                  <TabOrder id="314" val="30"/>
                 </PropertyList>
               </Control>
               <Control _test_id="93" id="93">
@@ -5759,7 +5626,7 @@
                   <Data FieldID="26" id="43"/>
                   <ControlName id="46" val="ContactNew_FirstName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="37"/>
+                  <TabOrder id="314" val="31"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5787,7 +5654,7 @@
                   <Data FieldID="54" id="43"/>
                   <ControlName id="46" val="v-contact is due bills"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="38"/>
+                  <TabOrder id="314" val="32"/>
                 </PropertyList>
               </Control>
               <Control _test_id="94" id="94">
@@ -5814,7 +5681,7 @@
                   <Data FieldID="27" id="43"/>
                   <ControlName id="46" val="ContactNew_LastName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="39"/>
+                  <TabOrder id="314" val="33"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5842,7 +5709,7 @@
                   <Data FieldID="28" id="43"/>
                   <ControlName id="46" val="ContactNew_Title"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="40"/>
+                  <TabOrder id="314" val="34"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5870,7 +5737,7 @@
                   <Data FieldID="29" id="43"/>
                   <ControlName id="46" val="ContactNew_CompanyName"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="41"/>
+                  <TabOrder id="314" val="35"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5898,7 +5765,7 @@
                   <Data FieldID="30" id="43"/>
                   <ControlName id="46" val="ContactNew_Addr1"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="42"/>
+                  <TabOrder id="314" val="36"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5926,7 +5793,7 @@
                   <Data FieldID="31" id="43"/>
                   <ControlName id="46" val="ContactNew_Addr2"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="43"/>
+                  <TabOrder id="314" val="37"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5954,7 +5821,7 @@
                   <Data FieldID="32" id="43"/>
                   <ControlName id="46" val="ContactNew_City"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="44"/>
+                  <TabOrder id="314" val="38"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -5982,7 +5849,7 @@
                   <Data FieldID="33" id="43"/>
                   <ControlName id="46" val="ContactNew_State"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="45"/>
+                  <TabOrder id="314" val="39"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6010,7 +5877,7 @@
                   <Data FieldID="34" id="43"/>
                   <ControlName id="46" val="ContactNew_Zip"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="46"/>
+                  <TabOrder id="314" val="40"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6038,7 +5905,7 @@
                   <Data FieldID="35" id="43"/>
                   <ControlName id="46" val="ContactNew_Phone"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="47"/>
+                  <TabOrder id="314" val="41"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6066,7 +5933,7 @@
                   <Data FieldID="36" id="43"/>
                   <ControlName id="46" val="ContactNew_Email"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="48"/>
+                  <TabOrder id="314" val="42"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6094,7 +5961,7 @@
                   <Data FieldID="37" id="43"/>
                   <ControlName id="46" val="ContactNew_Remove"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="49"/>
+                  <TabOrder id="314" val="43"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6122,7 +5989,7 @@
                   <Data FieldID="38" id="43"/>
                   <ControlName id="46" val="ContactNew_NewPerson"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="50"/>
+                  <TabOrder id="314" val="44"/>
                   <AllowParking id="315"/>
                 </PropertyList>
               </Control>
@@ -6336,24 +6203,12 @@
               <ExpSyntax val="{1,18}+IF({0,54},1,0)"/>
               <ExpAttribute val="N"/>
             </Expression>
-            <Expression id="53">
-              <ExpSyntax val="NOT ({0,50})"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="54">
-              <ExpSyntax val="{0,50} AND NOT ({0,37})"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="55">
-              <ExpSyntax val="NOT ({0,37})"/>
-              <ExpAttribute val="B"/>
-            </Expression>
           </Expressions>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
           <Task MainProgram="N">
-            <Header Description="Current contact type" ISN_2="7" LastIsn="40" id="14">
+            <Header Description="Current contact type" ISN_2="7" LastIsn="40" id="210">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -6366,7 +6221,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739812" _time="55680" date="07/15/2026" time="15:28:00"/>
+              <LastModified _date="739764" _time="54131" date="05/28/2026" time="15:02:11"/>
             </Header>
             <Resource>
               <Columns/>
@@ -6492,7 +6347,7 @@
               </FormEntry>
             </TaskForms>
             <Task MainProgram="N">
-              <Header Description="Read contact type xref" ISN_2="29" LastIsn="40" id="14">
+              <Header Description="Read contact type xref" ISN_2="29" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -6505,7 +6360,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="739812" _time="55674" date="07/15/2026" time="15:27:54"/>
+                <LastModified _date="739764" _time="54131" date="05/28/2026" time="15:02:11"/>
               </Header>
               <ItemIsn val="17"/>
               <Resource>
@@ -6570,7 +6425,7 @@
                   <KeepCreatedContext val="N"/>
                 </TaskProperties>
                 <SIDE_WIN>
-                  <AllowOptions val="Y"/>
+                  <AllowOptions val="N"/>
                   <AllowQuery val="Y"/>
                   <AllowModify val="Y"/>
                   <AllowCreate val="Y"/>
@@ -6587,7 +6442,7 @@
                   <AllowPrintingData val="N"/>
                 </SIDE_WIN>
                 <WIN>
-                  <OpenTaskWindow val="Y"/>
+                  <OpenTaskWindow val="N"/>
                   <CloseTaskWindow val="Y"/>
                   <ForegroundWindow val="Y"/>
                   <FlipFld val="N"/>
@@ -7255,7 +7110,7 @@
                   <ExpAttribute val="A"/>
                 </Expression>
                 <Expression id="11">
-                  <ExpSyntax val="NOT({3,51}) AND NOT({3,57}) AND {0,14}"/>
+                  <ExpSyntax val="NOT({3,51}) AND {0,14}"/>
                   <ExpAttribute val="B"/>
                 </Expression>
                 <Expression id="12">
@@ -7291,7 +7146,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="New contact type" ISN_2="17" LastIsn="40" id="14">
+            <Header Description="New contact type" ISN_2="17" LastIsn="40" id="210">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -7304,7 +7159,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739812" _time="53341" date="07/15/2026" time="14:49:01"/>
+              <LastModified _date="739768" _time="34097" date="06/01/2026" time="09:28:17"/>
             </Header>
             <ItemIsn val="2"/>
             <Resource>
@@ -7340,7 +7195,7 @@
                 <KeepCreatedContext val="N"/>
               </TaskProperties>
               <SIDE_WIN>
-                <AllowOptions val="Y"/>
+                <AllowOptions val="N"/>
                 <AllowQuery val="Y"/>
                 <AllowModify val="Y"/>
                 <AllowCreate val="Y"/>
@@ -7536,7 +7391,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="has new type record" ISN_2="35" LastIsn="40" id="14">
+              <Header Description="has new type record" ISN_2="35" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7549,7 +7404,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="739812" _time="53316" date="07/15/2026" time="14:48:36"/>
+                <LastModified _date="739768" _time="34097" date="06/01/2026" time="09:28:17"/>
               </Header>
               <ItemIsn val="6"/>
               <Resource>
@@ -7594,7 +7449,7 @@
                   <KeepCreatedContext val="N"/>
                 </TaskProperties>
                 <SIDE_WIN>
-                  <AllowOptions val="Y"/>
+                  <AllowOptions val="N"/>
                   <AllowQuery val="Y"/>
                   <AllowModify val="Y"/>
                   <AllowCreate val="Y"/>
@@ -7746,8 +7601,8 @@
               <TaskForms>
                 <FormEntry _last_isn="24" _last_test_id="24" id="1">
                   <PropertyList model="FORM_GUI0">
-                    <X id="21" val="602"/>
-                    <Y id="22" val="106"/>
+                    <X id="21" val="418"/>
+                    <Y id="22" val="73"/>
                     <Width id="23" val="613"/>
                     <Height id="24" val="72"/>
                     <_Comment id="218"/>
@@ -7928,7 +7783,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="has remove all type record" ISN_2="40" LastIsn="40" id="14">
+              <Header Description="has remove all type record" ISN_2="40" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7941,7 +7796,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="739812" _time="53337" date="07/15/2026" time="14:48:57"/>
+                <LastModified _date="739768" _time="34104" date="06/01/2026" time="09:28:24"/>
               </Header>
               <ItemIsn val="6"/>
               <Resource>
@@ -7986,7 +7841,7 @@
                   <KeepCreatedContext val="N"/>
                 </TaskProperties>
                 <SIDE_WIN>
-                  <AllowOptions val="Y"/>
+                  <AllowOptions val="N"/>
                   <AllowQuery val="Y"/>
                   <AllowModify val="Y"/>
                   <AllowCreate val="Y"/>
@@ -8281,7 +8136,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Read contact type xref" ISN_2="32" LastIsn="40" id="14">
+              <Header Description="Read contact type xref" ISN_2="32" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -8294,7 +8149,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="739812" _time="53355" date="07/15/2026" time="14:49:15"/>
+                <LastModified _date="739764" _time="60353" date="05/28/2026" time="16:45:53"/>
               </Header>
               <ItemIsn val="22"/>
               <Resource>
@@ -8373,7 +8228,7 @@
                   <KeepCreatedContext val="N"/>
                 </TaskProperties>
                 <SIDE_WIN>
-                  <AllowOptions val="Y"/>
+                  <AllowOptions val="N"/>
                   <AllowQuery val="Y"/>
                   <AllowModify val="Y"/>
                   <AllowCreate val="Y"/>
@@ -8390,7 +8245,7 @@
                   <AllowPrintingData val="N"/>
                 </SIDE_WIN>
                 <WIN>
-                  <OpenTaskWindow val="Y"/>
+                  <OpenTaskWindow val="N"/>
                   <CloseTaskWindow val="Y"/>
                   <ForegroundWindow val="Y"/>
                   <FlipFld val="N"/>
@@ -9216,7 +9071,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Read New Contact" ISN_2="22" LastIsn="40" id="14">
+          <Header Description="Read New Contact" ISN_2="22" LastIsn="40" id="210">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -9871,7 +9726,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="50" id="4"/>
           <Task MainProgram="N">
-            <Header Description="New contact type" ISN_2="26" LastIsn="40" id="14">
+            <Header Description="New contact type" ISN_2="26" LastIsn="40" id="210">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -10028,7 +9883,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="Derive sql in statement" ISN_2="27" LastIsn="40" id="14">
+              <Header Description="Derive sql in statement" ISN_2="27" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -10508,7 +10363,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Create contact type list in html" ISN_2="28" LastIsn="40" id="14">
+              <Header Description="Create contact type list in html" ISN_2="28" LastIsn="40" id="210">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="Y"/>
@@ -10747,7 +10602,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Derive missing contact types" ISN_2="36" LastIsn="40" id="14">
+          <Header Description="Derive missing contact types" ISN_2="36" LastIsn="40" id="210">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -11194,7 +11049,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="11" id="4"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="12" id="5"/>
           <Task MainProgram="N">
-            <Header Description="Loop thru all contacts" ISN_2="37" LastIsn="40" id="14">
+            <Header Description="Loop thru all contacts" ISN_2="37" LastIsn="40" id="210">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>

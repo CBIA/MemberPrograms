@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739762" _time="60753" date="05/26/2026" time="16:52:33"/>
+          <LastModified _date="739775" _time="53538" date="06/08/2026" time="14:52:18"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -582,7 +582,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
+            <LastModified _date="739775" _time="52812" date="06/08/2026" time="14:40:12"/>
           </Header>
           <ItemIsn val="8"/>
           <Resource>
@@ -901,7 +901,7 @@
                 <LogicLine>
                   <Update FlowIsn="13">
                     <FieldID val="1"/>
-                    <WithValue val="14"/>
+                    <WithValue val="15"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1233,6 +1233,10 @@
             </Expression>
             <Expression id="14">
               <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>'&amp;Trim({0,8})&amp;&#xD;&#xA;   '&lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="15">
+              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>'&amp;Trim({0,8})&amp;&#xD;&#xA;   '&lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;    &lt;link-entity name=&quot;pa_rostermember&quot; from=&quot;cbia_accountid&quot; to=&quot;accountid&quot; visible=&quot;false&quot; link-type=&quot;outer&quot; alias=&quot;ro&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;filter type=&quot;or&quot;>&#xD;&#xA;          &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;eq&quot; value=&quot;ADVOCACY&quot; />&#xD;&#xA;          &lt;condition attribute=&quot;pa_rostercode&quot; operator=&quot;eq&quot; value=&quot;NEWADVMBR&quot; />&#xD;&#xA;        &lt;/filter>&#xD;&#xA;          &lt;condition attribute=&quot;statecode&quot; operator=&quot;eq&quot; value=&quot;0&quot; />&#xD;&#xA;      &lt;/filter>&#xD;&#xA;      &lt;attribute name=&quot;pa_rostercode&quot; />&#xD;&#xA;    &lt;/link-entity>&#xD;&#xA;&lt;/entity>&lt;/fetch>'"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
@@ -3069,7 +3073,7 @@
                     <External val="N"/>
                     <FormType val="N"/>
                     <DotNetObjectExists val="N"/>
-                    <LastModified _date="739762" _time="60722" date="05/26/2026" time="16:52:02"/>
+                    <LastModified _date="739775" _time="53538" date="06/08/2026" time="14:52:18"/>
                   </Header>
                   <ItemIsn val="4"/>
                   <Resource>
@@ -3582,7 +3586,7 @@
                           <Update FlowIsn="155">
                             <Parent val="3"/>
                             <FieldID val="31"/>
-                            <WithValue val="1"/>
+                            <WithValue val="33"/>
                             <Incremental val="N"/>
                             <ForcedUpdate val="Y"/>
                             <Condition val="Y"/>
@@ -4012,7 +4016,7 @@
                           <Update FlowIsn="156">
                             <Parent val="3"/>
                             <FieldID val="31"/>
-                            <WithValue val="3"/>
+                            <WithValue val="34"/>
                             <Incremental val="N"/>
                             <ForcedUpdate val="Y"/>
                             <Condition Exp="32"/>
@@ -5123,8 +5127,16 @@
                       <ExpAttribute val="B"/>
                     </Expression>
                     <Expression id="32">
-                      <ExpSyntax val="Trim({0,1})='cbia_advocacymember'"/>
+                      <ExpSyntax val="Trim({0,1})='ro.pa_rostercode'"/>
                       <ExpAttribute val="B"/>
+                    </Expression>
+                    <Expression id="33">
+                      <ExpSyntax val="'NO'"/>
+                      <ExpAttribute val="A"/>
+                    </Expression>
+                    <Expression id="34">
+                      <ExpSyntax val="'YES'"/>
+                      <ExpAttribute val="A"/>
                     </Expression>
                   </Expressions>
                   <Task MainProgram="N">

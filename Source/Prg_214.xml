@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Token call API" ISN_2="1" LastIsn="2" id="181">
+        <Header Description="Azure B2C Graph Api get bearer token" ISN_2="1" LastIsn="2" id="214">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -30,39 +30,32 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739831" _time="56686" date="08/03/2026" time="15:44:46"/>
+          <LastModified _date="739814" _time="61608" date="07/17/2026" time="17:06:48"/>
         </Header>
-        <ItemIsn val="6"/>
+        <ItemIsn val="3"/>
         <Resource>
           <Columns>
-            <Column id="1" name="rp-token">
+            <Column id="1" name="rp-bearer token">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="3000"/>
-                <StoredAs id="173" val="1"/>
                 <Size id="174" val="3000"/>
                 <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
               </PropertyList>
             </Column>
-            <Column id="3" name="v-request body">
+            <Column id="2" name="v-request body">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="1000"/>
-                <StoredAs id="173" val="1"/>
                 <Size id="174" val="1000"/>
                 <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
               </PropertyList>
             </Column>
-            <Column id="5" name="v-base64 authorization string">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="1000"/>
-                <StoredAs id="173" val="1"/>
-                <Size id="174" val="1000"/>
-                <_Flip id="194"/>
-              </PropertyList>
-            </Column>
-            <Column id="6" name="v-api response">
+            <Column id="3" name="v-request response json">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_BLOB" id="1"/>
                 <GuiDisplay id="158">
@@ -103,14 +96,14 @@
             <LockingStrategy val="I"/>
             <CacheStrategy val="T"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="P"/>
+            <TransactionMode val="W"/>
             <TransactionBegin val="T"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="N"/>
+            <AllowOptions val="Y"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -127,7 +120,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="N"/>
+            <OpenTaskWindow val="Y"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -138,7 +131,7 @@
           </BOX>
         </Information>
         <TaskLogic>
-          <LogicUnit id="1" propagate="78">
+          <LogicUnit id="2" propagate="78">
             <Level val="R"/>
             <Type val="M"/>
             <Scope val="S"/>
@@ -150,7 +143,7 @@
             </Event>
             <LogicLines>
               <LogicLine>
-                <DATAVIEW_SRC FlowIsn="1" Type="M">
+                <DATAVIEW_SRC FlowIsn="2" Type="M">
                   <Condition val="N"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -170,42 +163,31 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="7">
+                <Remark FlowIsn="4">
                   <Type val="0"/>
                   <Text val=" "/>
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="3" FlowIsn="8" id="3">
+                <Select FieldID="2" FlowIsn="5" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="6" id="3">
                   <Column val="3"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="5" FlowIsn="11" id="5">
-                  <Column val="5"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="6" FlowIsn="16" id="6">
-                  <Column val="6"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -226,39 +208,41 @@
             </Event>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="4">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                  </Event>
-                  <TaskID comp="-1" obj="180"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Variable val="5"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <RetainFocus val="N"/>
+                <Update FlowIsn="7">
+                  <FieldID val="2"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
-                  <Modifier val="S"/>
+                  <Modifier val="B"/>
                   <Direction val="C"/>
-                </CallTask>
+                </Update>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="5">
+                <Remark FlowIsn="8">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="10">
+                <Update FlowIsn="9">
+                  <FieldID val="3"/>
+                  <WithValue val="2"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="10">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="11">
                   <FieldID val="3"/>
                   <WithValue val="3"/>
                   <Incremental val="N"/>
@@ -269,35 +253,27 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="6">
-                  <FieldID val="6"/>
-                  <WithValue val="2"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="17">
-                  <FieldID val="6"/>
-                  <WithValue val="4"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="18">
+                <Remark FlowIsn="12">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="19">
+                <Evaluate FlowIsn="13">
+                  <Expression val="5"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="14">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="15">
                   <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
@@ -316,81 +292,125 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="3" _last_test_id="3" id="1">
+          <FormEntry _last_isn="6" _last_test_id="13" id="1">
             <PropertyList model="FORM_GUI0">
-              <Width id="23" val="897"/>
-              <Height id="24" val="474"/>
+              <Width id="23" val="903"/>
+              <Height id="24" val="486"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Token call API"/>
+              <FormName id="311" valUnicode="Azure B2C Graph Api get bearer token"/>
             </PropertyList>
-            <Control _test_id="2" id="2">
+            <Control _test_id="10" id="1">
               <PropertyList model="CTRL_GUI0_STATIC">
-                <Text id="19" valUnicode="rp-token:"/>
+                <Text id="19" valUnicode="v-rp bearer token:"/>
                 <X id="21" val="4"/>
                 <Y id="22" val="8"/>
-                <Width id="23" val="35"/>
+                <Width id="23" val="69"/>
                 <Height id="24" val="9"/>
                 <Style id="63" val="7"/>
                 <EnableRTF id="69"/>
                 <_Orientation id="143"/>
               </PropertyList>
             </Control>
-            <Control _test_id="1" id="1">
+            <Control _test_id="7" id="2">
               <PropertyList model="CTRL_GUI0_EDIT">
                 <Model ID="MODEL_GUI_INT" id="1">
                   <Var FieldID="1"/>
                 </Model>
-                <X id="21" val="43"/>
+                <X id="21" val="102"/>
                 <Y id="22" val="8"/>
-                <Width id="23" val="800"/>
-                <Height id="24" val="119"/>
+                <Width id="23" val="756"/>
+                <Height id="24" val="182"/>
                 <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="rp-token"/>
-                <Modifiable id="53"/>
+                <ControlName id="46" val="v-rp bearer token"/>
                 <MultiLineEdit id="71" val="Y"/>
                 <VerticalScroll id="73" val="Y"/>
                 <AllowCRInData id="74" val="Y"/>
+                <ExpansionWindow id="84"/>
                 <_Orientation id="143"/>
                 <TabOrder id="314" val="1"/>
                 <MultilineWordwrapScroll id="455" val="3"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="3" id="3">
+            <Control _test_id="11" id="3">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="v-request body:"/>
+                <X id="21" val="4"/>
+                <Y id="22" val="202"/>
+                <Width id="23" val="60"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="8" id="4">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2"/>
+                </Model>
+                <X id="21" val="102"/>
+                <Y id="22" val="202"/>
+                <Width id="23" val="400"/>
+                <Height id="24" val="71"/>
+                <Data FieldID="2" id="43"/>
+                <ControlName id="46" val="v-request body"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73" val="Y"/>
+                <AllowCRInData id="74" val="Y"/>
+                <ExpansionWindow id="84"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+                <MultilineWordwrapScroll id="455" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="12" id="5">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="v-request response json:"/>
+                <X id="21" val="4"/>
+                <Y id="22" val="284"/>
+                <Width id="23" val="94"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="13" id="6">
               <PropertyList model="CTRL_GUI0_RICH_EDIT">
                 <Model ID="MODEL_GUI_INT" id="1">
-                  <Var FieldID="6"/>
+                  <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="43"/>
-                <Y id="22" val="144"/>
-                <Width id="23" val="800"/>
-                <Height id="24" val="206"/>
-                <Data FieldID="6" id="43"/>
-                <ControlName id="46" val="v-api response"/>
-                <TabOrder id="314" val="2"/>
+                <X id="21" val="102"/>
+                <Y id="22" val="284"/>
+                <Width id="23" val="756"/>
+                <Height id="24" val="186"/>
+                <Data FieldID="3" id="43"/>
+                <ControlName id="46" val="v-request response json"/>
+                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="Trim({32768,7})&amp;':'&amp;Trim({32768,8})"/>
+            <ExpSyntax val="'grant_type=client_credentials&amp;client_id='&amp;???&amp;'&amp;client_secret='&amp;Trim(W)&amp;'&amp;scope=https://graph.microsoft.com/.default'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="HTTPCall('POST',{32768,10},Trim({0,3}),'Content-Type=application/x-www-form-urlencoded','Authorization:Basic '&amp;Trim({0,5}))"/>
-            <ExpAttribute val="O"/>
+            <ExpSyntax val="HTTPCall('POST','https://login.microsoftonline.com/'&amp;Trim(???)&amp;'/oauth2/v2.0/token',Trim(BA),'Content-Type: application/x-www-form-urlencoded;charset=UTF-8','Content-Length:1869')"/>
+            <ExpAttribute val="A"/>
           </Expression>
           <Expression id="3">
-            <ExpSyntax val="'grant_type=client_credentials&amp;client_id='&amp;Trim({32768,7})"/>
+            <ExpSyntax val="'{&quot;AzureB2C_Graph_Api_Token_json&quot;:'&amp;Trim({0,3})&amp;'}'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="4">
-            <ExpSyntax val="'{&quot;BearTokenApiResponse&quot;:'&amp;Trim({0,6})&amp;'}'"/>
-            <ExpAttribute val="A"/>
+          <Expression id="5">
+            <ExpSyntax val="Blb2File({0,3},'\\cbia-data2\appls\gigadeploy\v48\prod\Cbialogin\beartoken'&amp;TStr(Time(),'HHMMSS')&amp;'.txt')"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Read JSON" ISN_2="2" LastIsn="2" id="181">
+          <Header Description="Read JSON response" ISN_2="2" LastIsn="2" id="214">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -403,12 +423,12 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739726" _time="49107" date="04/20/2026" time="13:38:27"/>
+            <LastModified _date="739814" _time="61598" date="07/17/2026" time="17:06:38"/>
           </Header>
-          <ItemIsn val="3"/>
+          <ItemIsn val="4"/>
           <Resource>
-            <DB FieldID="6" Parent="1" id="1">
-              <DataObject comp="-1" obj="36"/>
+            <DB id="2">
+              <DataObject comp="-1" obj="50"/>
               <Access val="W"/>
               <Share val="R"/>
               <Open val="N"/>
@@ -421,7 +441,7 @@
             <Key>
               <Mode val="N"/>
             </Key>
-            <DB comp="-1" obj="36"/>
+            <DB comp="-1" obj="50"/>
             <Sort>
               <CLS val="A"/>
             </Sort>
@@ -475,7 +495,7 @@
             </BOX>
           </Information>
           <TaskLogic>
-            <LogicUnit id="1" propagate="78">
+            <LogicUnit id="2" propagate="78">
               <Level val="R"/>
               <Type val="M"/>
               <Scope val="S"/>
@@ -487,14 +507,14 @@
               </Event>
               <LogicLines>
                 <LogicLine>
-                  <DATAVIEW_SRC FlowIsn="1" IDX="1" Type="M">
+                  <DATAVIEW_SRC FlowIsn="2" IDX="2" Type="M">
                     <Condition val="N"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="1" FlowIsn="2" id="1">
+                  <Select FieldID="1" FlowIsn="3" id="1">
                     <Column val="637534212"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -507,7 +527,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="2" FlowIsn="3" id="2">
+                  <Select FieldID="2" FlowIsn="4" id="2">
                     <Column val="637534210"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -520,7 +540,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="3" FlowIsn="4" id="3">
+                  <Select FieldID="3" FlowIsn="5" id="3">
                     <Column val="637534209"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -534,7 +554,7 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
-            <LogicUnit id="2" propagate="78">
+            <LogicUnit id="3" propagate="78">
               <Level val="R"/>
               <Type val="S"/>
               <Scope val="S"/>
@@ -546,7 +566,7 @@
               </Event>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="5">
+                  <Update FlowIsn="7">
                     <Parent val="1"/>
                     <FieldID val="1"/>
                     <WithValue val="1"/>
@@ -561,43 +581,41 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="6" _last_test_id="6" id="1">
+            <FormEntry _last_isn="8" _last_test_id="8" id="1">
               <PropertyList model="FORM_GUI0">
-                <X id="21" val="13"/>
-                <Y id="22" val="421"/>
-                <Width id="23" val="871"/>
-                <Height id="24" val="76"/>
+                <X id="21" val="768"/>
+                <Y id="22" val="1"/>
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="Read JSON"/>
+                <FormName id="311" valUnicode="Read JSON response"/>
               </PropertyList>
-              <Control _test_id="4" id="4">
+              <Control _test_id="5" id="1">
                 <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="access_token:"/>
+                  <Text id="19" valUnicode="token_type:"/>
                   <X id="21" val="4"/>
                   <Y id="22" val="8"/>
-                  <Width id="23" val="58"/>
+                  <Width id="23" val="46"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
                   <EnableRTF id="69"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="1" id="1">
+              <Control _test_id="1" id="2">
                 <PropertyList model="CTRL_GUI0_EDIT">
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="1"/>
                   </Model>
                   <X id="21" val="66"/>
                   <Y id="22" val="8"/>
-                  <Width id="23" val="2803"/>
+                  <Width id="23" val="115"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="access_token"/>
+                  <ControlName id="46" val="token_type"/>
                   <_Orientation id="143"/>
                   <TabOrder id="314" val="1"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="5" id="5">
+              <Control _test_id="6" id="3">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="expires_in:"/>
                   <X id="21" val="4"/>
@@ -609,14 +627,14 @@
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
-              <Control PDOD="1" _test_id="2" id="2">
+              <Control PDOD="1" _test_id="2" id="4">
                 <PropertyList model="CTRL_GUI0_EDIT">
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="2"/>
                   </Model>
                   <X id="21" val="66"/>
                   <Y id="22" val="26"/>
-                  <Width id="23" val="37"/>
+                  <Width id="23" val="27"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="2" id="43"/>
                   <ControlName id="46" val="expires_in"/>
@@ -624,38 +642,62 @@
                   <TabOrder id="314" val="2"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="6" id="6">
+              <Control _test_id="7" id="5">
                 <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="token_type:"/>
+                  <Text id="19" valUnicode="ext_expires_in:"/>
                   <X id="21" val="4"/>
                   <Y id="22" val="44"/>
-                  <Width id="23" val="46"/>
+                  <Width id="23" val="58"/>
                   <Height id="24" val="9"/>
                   <Style id="63" val="7"/>
                   <EnableRTF id="69"/>
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="3" id="3">
+              <Control _test_id="3" id="6">
                 <PropertyList model="CTRL_GUI0_EDIT">
                   <Model ID="MODEL_GUI_INT" id="1">
                     <Var FieldID="3"/>
                   </Model>
                   <X id="21" val="66"/>
                   <Y id="22" val="44"/>
-                  <Width id="23" val="115"/>
+                  <Width id="23" val="27"/>
                   <Height id="24" val="10"/>
                   <Data FieldID="3" id="43"/>
-                  <ControlName id="46" val="token_type"/>
+                  <ControlName id="46" val="ext_expires_in"/>
                   <_Orientation id="143"/>
                   <TabOrder id="314" val="3"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="8" id="7">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="access_token:"/>
+                  <X id="21" val="4"/>
+                  <Y id="22" val="62"/>
+                  <Width id="23" val="58"/>
+                  <Height id="24" val="9"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="4" id="8">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <X id="21" val="66"/>
+                  <Y id="22" val="62"/>
+                  <Width id="23" val="2803"/>
+                  <Height id="24" val="10"/>
+                  <Data id="43"/>
+                  <ControlName id="46" val="access_token"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="4"/>
                 </PropertyList>
               </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
             <Expression id="1">
-              <ExpSyntax val="{0,1}"/>
+              <ExpSyntax val="Trim({0,1})"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
