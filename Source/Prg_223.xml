@@ -13,15 +13,16 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Read Attendee API response JSON NO Custom Fields" ISN_2="1" LastIsn="13" id="223">
+        <Header Description="Read Attendee API response JSON exclude dietary field" ISN_2="1" LastIsn="13" id="223">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="2"/>
+            <TSK_PARAMS val="3"/>
             <ParametersAttributes>
               <Attr MgAttr="R"/>
+              <Attr MgAttr="A"/>
               <Attr MgAttr="A"/>
             </ParametersAttributes>
           </ReturnValue>
@@ -31,10 +32,28 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739834" _time="52482" date="08/06/2026" time="14:34:42"/>
+          <LastModified _date="739838" _time="59144" date="08/10/2026" time="16:25:44"/>
         </Header>
-        <ItemIsn val="3"/>
+        <ItemIsn val="4"/>
         <Resource>
+          <IO id="1">
+            <Description val="test out"/>
+            <IOExpression val="5"/>
+            <OpenPrintDialog val="N"/>
+            <PaperSize val="68"/>
+            <Format val="L"/>
+            <Media val="S"/>
+            <Access val="A"/>
+            <Orientation val="P"/>
+            <PrintPreview val="N"/>
+            <PDF val="N"/>
+            <PrintingAllowed val="Y"/>
+            <ContentCopyingAllowed val="Y"/>
+            <ChangesAllowed val="Y"/>
+            <PageLayoutAllowed val="Y"/>
+            <Vis2LogTranslation val="N"/>
+            <FlipLines val="N"/>
+          </IO>
           <Columns>
             <Column id="1" name="p-Cvent attendee JSON">
               <PropertyList model="FIELD">
@@ -50,6 +69,15 @@
               </PropertyList>
             </Column>
             <Column id="2" name="rp-next token">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="36"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="36"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="p-event id">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="36"/>
@@ -83,14 +111,14 @@
             <LockingStrategy val="O"/>
             <CacheStrategy val="D"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
+            <TransactionMode val="W"/>
             <TransactionBegin val="P"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="Y"/>
+            <AllowOptions val="N"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -107,7 +135,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="Y"/>
+            <OpenTaskWindow val="N"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -156,6 +184,18 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <_DitIndexForToolkit val="3"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="17" id="4">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -253,7 +293,7 @@
               <Width id="23" val="610"/>
               <Height id="24" val="106"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Read Attendee API response JSON NO Custom Fields"/>
+              <FormName id="311" valUnicode="Read Attendee API response JSON exclude dietary field"/>
             </PropertyList>
             <Control _test_id="3" id="3">
               <PropertyList model="CTRL_GUI0_STATIC">
@@ -315,16 +355,12 @@
             <ExpSyntax val="'{&quot;CVentAttendeeList&quot;:'&amp;Trim({0,1})&amp;'}'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="2">
-            <ExpSyntax val="File2Blb('C:\temporaryfolder\Sean Furlong.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="3">
-            <ExpSyntax val="File2Blb('C:\temporaryfolder\10 Attendee.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
           <Expression id="4">
             <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="'c:\temporaryfolder\cventtest.txt'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
@@ -342,9 +378,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739834" _time="51783" date="08/06/2026" time="14:23:03"/>
+            <LastModified _date="739838" _time="52715" date="08/10/2026" time="14:38:35"/>
           </Header>
-          <ItemIsn val="2"/>
+          <ItemIsn val="4"/>
           <Resource>
             <DB FieldID="1" Parent="1" id="1">
               <DataObject comp="-1" obj="66"/>
@@ -354,7 +390,17 @@
               <Cache val="Y"/>
               <IdentifyRowModifications val="84"/>
             </DB>
-            <Columns/>
+            <Columns>
+              <Column id="1" name="v-current token">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="36"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="36"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+            </Columns>
           </Resource>
           <Information>
             <Key>
@@ -456,6 +502,24 @@
                     <Direction val="C"/>
                   </Select>
                 </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="8">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="4" FlowIsn="9" id="4">
+                    <Column val="1"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
             <LogicUnit id="3" propagate="78">
@@ -526,9 +590,9 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739834" _time="51869" date="08/06/2026" time="14:24:29"/>
+              <LastModified _date="739838" _time="52650" date="08/10/2026" time="14:37:30"/>
             </Header>
-            <ItemIsn val="4"/>
+            <ItemIsn val="5"/>
             <Resource>
               <DB FieldID="1" Parent="2" id="1">
                 <DataObject comp="-1" obj="69"/>
@@ -629,6 +693,18 @@
                     </Select>
                   </LogicLine>
                   <LogicLine>
+                    <Select FieldID="5" FlowIsn="8" id="5">
+                      <Column val="4"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="Y"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
                     <Select FieldID="2" FlowIsn="3" id="2">
                       <Column val="5"/>
                       <Type val="R"/>
@@ -653,6 +729,18 @@
                   <EventType val="S"/>
                 </Event>
                 <LogicLines>
+                  <LogicLine>
+                    <Update FlowIsn="9">
+                      <Parent val="2"/>
+                      <FieldID val="4"/>
+                      <WithValue val="2"/>
+                      <Incremental val="N"/>
+                      <ForcedUpdate val="Y"/>
+                      <Condition val="Y"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </Update>
+                  </LogicLine>
                   <LogicLine>
                     <Update FlowIsn="7">
                       <Parent val="1"/>
@@ -681,6 +769,10 @@
                 <ExpSyntax val="{0,2}"/>
                 <ExpAttribute val="A"/>
               </Expression>
+              <Expression id="2">
+                <ExpSyntax val="{0,5}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
             </Expressions>
           </Task>
           <Task MainProgram="N">
@@ -697,7 +789,7 @@
               <External val="N"/>
               <FormType val="N"/>
               <DotNetObjectExists val="N"/>
-              <LastModified _date="739834" _time="51783" date="08/06/2026" time="14:23:03"/>
+              <LastModified _date="739838" _time="59144" date="08/10/2026" time="16:25:44"/>
             </Header>
             <ItemIsn val="59"/>
             <Resource>
@@ -773,9 +865,9 @@
                 <Column id="6" name="v-admission item">
                   <PropertyList model="FIELD">
                     <Model attr_obj="FIELD_ALPHA" id="1"/>
-                    <Picture id="157" valUnicode="40"/>
+                    <Picture id="157" valUnicode="70"/>
                     <StoredAs id="173" val="1"/>
-                    <Size id="174" val="40"/>
+                    <Size id="174" val="70"/>
                     <_Flip id="194"/>
                   </PropertyList>
                 </Column>
@@ -809,9 +901,9 @@
                 <Column id="10" name="v-title">
                   <PropertyList model="FIELD">
                     <Model attr_obj="FIELD_ALPHA" id="1"/>
-                    <Picture id="157" valUnicode="50"/>
+                    <Picture id="157" valUnicode="100"/>
                     <StoredAs id="173" val="1"/>
-                    <Size id="174" val="50"/>
+                    <Size id="174" val="100"/>
                     <_Flip id="194"/>
                   </PropertyList>
                 </Column>
@@ -1452,6 +1544,28 @@
                     </Remark>
                   </LogicLine>
                   <LogicLine>
+                    <FormIO FlowIsn="178">
+                      <OperationType val="O"/>
+                      <Page val="A"/>
+                      <IODeviceInfo>
+                        <IoDeviceParent val="1"/>
+                        <IoDeviceIndex val="1"/>
+                      </IODeviceInfo>
+                      <FormEntryInfo>
+                        <FormEntryIndex val="2"/>
+                      </FormEntryInfo>
+                      <Condition val="N"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </FormIO>
+                  </LogicLine>
+                  <LogicLine>
+                    <Remark FlowIsn="179">
+                      <Type val="2"/>
+                      <Text val=" "/>
+                    </Remark>
+                  </LogicLine>
+                  <LogicLine>
                     <CallTask FlowIsn="156">
                       <OperationType val="T"/>
                       <Event>
@@ -1462,7 +1576,7 @@
                       <Wait val="Y"/>
                       <SyncData val="N"/>
                       <RetainFocus val="N"/>
-                      <Condition val="Y"/>
+                      <Condition Exp="8"/>
                       <Modifier val="S"/>
                       <Direction val="C"/>
                     </CallTask>
@@ -1774,6 +1888,7 @@
                     <Data FieldID="1" id="43"/>
                     <ControlName id="46" val="id"/>
                     <Style id="63" val="1"/>
+                    <ExpansionWindow id="84"/>
                     <_Orientation id="143"/>
                     <TabOrder id="314" val="1"/>
                     <Border id="452"/>
@@ -1793,6 +1908,7 @@
                     <Data FieldID="3" id="43"/>
                     <ControlName id="46" val="guest"/>
                     <Style id="63" val="1"/>
+                    <ExpansionWindow id="84"/>
                     <_Orientation id="143"/>
                     <TabOrder id="314" val="2"/>
                     <Border id="452"/>
@@ -1812,6 +1928,7 @@
                     <Data FieldID="4" id="43"/>
                     <ControlName id="46" val="primaryId"/>
                     <Style id="63" val="1"/>
+                    <ExpansionWindow id="84"/>
                     <_Orientation id="143"/>
                     <TabOrder id="314" val="3"/>
                     <Border id="452"/>
@@ -1831,9 +1948,79 @@
                     <Data FieldID="5" id="43"/>
                     <ControlName id="46" val="status"/>
                     <Style id="63" val="1"/>
+                    <ExpansionWindow id="84"/>
                     <_Orientation id="143"/>
                     <TabOrder id="314" val="4"/>
                     <Border id="452"/>
+                  </PropertyList>
+                </Control>
+              </FormEntry>
+            </TaskForms>
+            <TaskForms>
+              <FormEntry CLSS="1" _last_isn="5" _last_test_id="5" id="2">
+                <PropertyList model="FORM_TEXT">
+                  <Width id="23" val="200"/>
+                  <Height id="24" val="1"/>
+                  <_Comment id="218"/>
+                  <FormName id="311" valUnicode="test output"/>
+                </PropertyList>
+                <Control _test_id="5" id="5">
+                  <PropertyList model="CTRL_TEXT_EDIT">
+                    <Model ID="MODEL_TEXTBASE" id="1">
+                      <Var FieldID="4" Parent="1"/>
+                    </Model>
+                    <Width id="23" val="36"/>
+                    <Height id="24" val="1"/>
+                    <Data FieldID="4" Parent="1" id="43"/>
+                    <_Orientation id="143"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="1" id="1">
+                  <PropertyList model="CTRL_TEXT_EDIT">
+                    <Model ID="MODEL_TEXTBASE" id="1">
+                      <Var FieldID="4" Parent="2"/>
+                    </Model>
+                    <X id="21" val="40"/>
+                    <Width id="23" val="36"/>
+                    <Height id="24" val="1"/>
+                    <Data FieldID="4" Parent="2" id="43"/>
+                    <_Orientation id="143"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="2" id="2">
+                  <PropertyList model="CTRL_TEXT_EDIT">
+                    <Model ID="MODEL_TEXTBASE" id="1">
+                      <Var FieldID="37"/>
+                    </Model>
+                    <X id="21" val="77"/>
+                    <Width id="23" val="20"/>
+                    <Height id="24" val="1"/>
+                    <Data FieldID="37" id="43"/>
+                    <_Orientation id="143"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="3" id="3">
+                  <PropertyList model="CTRL_TEXT_EDIT">
+                    <Model ID="MODEL_TEXTBASE" id="1">
+                      <Var FieldID="40"/>
+                    </Model>
+                    <X id="21" val="97"/>
+                    <Width id="23" val="50"/>
+                    <Height id="24" val="1"/>
+                    <Data FieldID="40" id="43"/>
+                    <_Orientation id="143"/>
+                  </PropertyList>
+                </Control>
+                <Control _test_id="4" id="4">
+                  <PropertyList model="CTRL_TEXT_EDIT">
+                    <Model ID="MODEL_TEXTBASE" id="1">
+                      <Var FieldID="39"/>
+                    </Model>
+                    <X id="21" val="149"/>
+                    <Width id="23" val="50"/>
+                    <Height id="24" val="1"/>
+                    <Data FieldID="39" id="43"/>
+                    <_Orientation id="143"/>
                   </PropertyList>
                 </Control>
               </FormEntry>
@@ -1865,6 +2052,10 @@
               </Expression>
               <Expression id="7">
                 <ExpSyntax val="'FALSE'LOG"/>
+                <ExpAttribute val="B"/>
+              </Expression>
+              <Expression id="8">
+                <ExpSyntax val="Trim({0,37})&lt;>''"/>
                 <ExpAttribute val="B"/>
               </Expression>
             </Expressions>
@@ -3351,7 +3542,7 @@
                   <External val="N"/>
                   <FormType val="N"/>
                   <DotNetObjectExists val="N"/>
-                  <LastModified _date="739834" _time="43135" date="08/06/2026" time="11:58:55"/>
+                  <LastModified _date="739838" _time="43486" date="08/10/2026" time="12:04:46"/>
                 </Header>
                 <ItemIsn val="2"/>
                 <Resource>
@@ -3488,7 +3679,7 @@
                           <WithValue val="2"/>
                           <Incremental val="N"/>
                           <ForcedUpdate val="Y"/>
-                          <Condition Exp="3"/>
+                          <Condition val="Y"/>
                           <Modifier val="B"/>
                           <Direction val="C"/>
                         </Update>
@@ -3580,10 +3771,6 @@
                   <Expression id="2">
                     <ExpSyntax val="'Yes'"/>
                     <ExpAttribute val="A"/>
-                  </Expression>
-                  <Expression id="3">
-                    <ExpSyntax val="Trim({0,2})='Synced'"/>
-                    <ExpAttribute val="B"/>
                   </Expression>
                 </Expressions>
                 <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>

@@ -13,13 +13,16 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="experiement" ISN_2="1" LastIsn="3" id="221">
+        <Header Description="Attendee API JSON pre processing for Custom fields retrieval" ISN_2="1" LastIsn="3" id="221">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="1"/>
+            <ParametersAttributes>
+              <Attr MgAttr="R"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -27,12 +30,12 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739834" _time="39940" date="08/06/2026" time="11:05:40"/>
+          <LastModified _date="739838" _time="43469" date="08/10/2026" time="12:04:29"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
           <Columns>
-            <Column id="1" name="v-blob">
+            <Column id="1" name="p-blob">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_BLOB" id="1"/>
                 <GuiDisplay id="158">
@@ -70,14 +73,14 @@
             <LockingStrategy val="O"/>
             <CacheStrategy val="D"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
+            <TransactionMode val="W"/>
             <TransactionBegin val="P"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="Y"/>
+            <AllowOptions val="N"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -94,7 +97,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="Y"/>
+            <OpenTaskWindow val="N"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -128,7 +131,7 @@
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
+                  <IsParameter val="Y"/>
                   <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -150,17 +153,6 @@
             </Event>
             <LogicLines>
               <LogicLine>
-                <Update FlowIsn="4">
-                  <FieldID val="1"/>
-                  <WithValue val="11"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
                 <Remark FlowIsn="5">
                   <Type val="2"/>
                   <Text val=" "/>
@@ -172,7 +164,7 @@
                   <WithValue val="2"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Condition val="N"/>
+                  <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
@@ -289,7 +281,7 @@
               <Width id="23" val="972"/>
               <Height id="24" val="372"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="experiement"/>
+              <FormName id="311" valUnicode="Attendee API JSON pre processing for Custom fields retrieval"/>
             </PropertyList>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_GUI0_STATIC">
@@ -320,22 +312,6 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="File2Blb('c:\temporaryfolder\full Attendee.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="9">
-            <ExpSyntax val="File2Blb('c:\temporaryfolder\Sean Furlong.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="10">
-            <ExpSyntax val="File2Blb('c:\temporaryfolder\full Attendee Copy.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="11">
-            <ExpSyntax val="File2Blb('c:\temporaryfolder\5 Attendee.JSON')"/>
-            <ExpAttribute val="O"/>
-          </Expression>
           <Expression id="2">
             <ExpSyntax val="RepStr({0,1},' ','')"/>
             <ExpAttribute val="A"/>
@@ -379,7 +355,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739833" _time="66593" date="08/05/2026" time="18:29:53"/>
+            <LastModified _date="739838" _time="43469" date="08/10/2026" time="12:04:29"/>
           </Header>
           <ItemIsn val="8"/>
           <Resource>
@@ -780,22 +756,6 @@
                   </Remark>
                 </LogicLine>
                 <LogicLine>
-                  <CallTask FlowIsn="20">
-                    <OperationType val="T"/>
-                    <Event>
-                      <EventType val="N"/>
-                    </Event>
-                    <TaskID comp="-1" obj="3"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
                   <Update FlowIsn="22">
                     <FieldID val="1"/>
                     <WithValue val="4"/>
@@ -1104,10 +1064,6 @@
               <ExpSyntax val="{0,3}"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="14">
-              <ExpSyntax val="Delay(2)"/>
-              <ExpAttribute val="B"/>
-            </Expression>
             <Expression id="15">
               <ExpSyntax val="({0,4}-{0,1})&lt;500"/>
               <ExpAttribute val="B"/>
@@ -1121,117 +1077,6 @@
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
-          <Task MainProgram="N">
-            <Header Description="dummy" ISN_2="3" LastIsn="3" id="221">
-              <ExecutionRight comp="-1"/>
-              <Resident val="N"/>
-              <SQL val="N"/>
-              <ReturnValue>
-                <ReturnValueAttr/>
-                <ParametersAttributes/>
-              </ReturnValue>
-              <SqlWhereExist val="N"/>
-              <TaskType val="B"/>
-              <External val="N"/>
-              <FormType val="N"/>
-              <DotNetObjectExists val="N"/>
-              <LastModified _date="739833" _time="65997" date="08/05/2026" time="18:19:57"/>
-            </Header>
-            <Resource>
-              <Columns/>
-            </Resource>
-            <Information>
-              <Key>
-                <Mode val="N"/>
-              </Key>
-              <DB comp="-1"/>
-              <Sort>
-                <CLS val="A"/>
-              </Sort>
-              <ForceRecordDelete DEL="N"/>
-              <EndTaskCondition val="Y"/>
-              <EvaluateEndCondition val="A"/>
-              <InitialMode val="M"/>
-              <Locate Direction="A"/>
-              <Range Direction="A"/>
-              <VarRange/>
-              <TaskProperties>
-                <SelectionTable val="N"/>
-                <ConfirmUpdate CNFU="N"/>
-                <ConfirmCancel val="N"/>
-                <ErrorStrategy val="A"/>
-                <LockingStrategy val="I"/>
-                <CacheStrategy val="N"/>
-                <ForceRecordSuffix val="N"/>
-                <TransactionMode val="W"/>
-                <TransactionBegin val="T"/>
-                <PreloadView val="N"/>
-                <AllowEmptyDataview val="N"/>
-                <KeepCreatedContext val="N"/>
-              </TaskProperties>
-              <SIDE_WIN>
-                <AllowOptions val="N"/>
-                <AllowQuery val="Y"/>
-                <AllowModify val="Y"/>
-                <AllowCreate val="Y"/>
-                <AllowDelete val="Y"/>
-                <AllowLocate val="Y"/>
-                <AllowRange val="Y"/>
-                <AllowIndexChange val="Y"/>
-                <AllowSorting val="Y"/>
-                <AllowIOFiles val="Y"/>
-                <RecordCycle val="Y"/>
-                <AllowEvents val="Y"/>
-                <AllowIndexOptimization val="Y"/>
-                <AllowLocationInQuery val="Y"/>
-                <AllowPrintingData val="N"/>
-              </SIDE_WIN>
-              <WIN>
-                <OpenTaskWindow val="N"/>
-                <CloseTaskWindow val="Y"/>
-                <ForegroundWindow val="Y"/>
-                <FlipFld val="N"/>
-                <RefreshTaskWindow ReturnValue="N"/>
-              </WIN>
-              <BOX>
-                <Direction val="V"/>
-              </BOX>
-            </Information>
-            <TaskLogic>
-              <LogicUnit id="1" propagate="78">
-                <Level val="R"/>
-                <Type val="M"/>
-                <Scope val="S"/>
-                <EngineDirective val="S"/>
-                <ShowMessage val="Y"/>
-                <Condition val="89"/>
-                <Event>
-                  <EventType val="S"/>
-                </Event>
-                <LogicLines>
-                  <LogicLine>
-                    <DATAVIEW_SRC FlowIsn="1" Type="M">
-                      <Condition val="N"/>
-                      <Modifier val="B"/>
-                      <Direction val="C"/>
-                    </DATAVIEW_SRC>
-                  </LogicLine>
-                </LogicLines>
-              </LogicUnit>
-            </TaskLogic>
-            <TaskForms>
-              <FormEntry id="1">
-                <PropertyList model="FORM_GUI0">
-                  <X id="21" val="930"/>
-                  <Y id="22" val="3"/>
-                  <Width id="23" val="109"/>
-                  <Height id="24" val="17"/>
-                  <_Comment id="218"/>
-                  <FormName id="311" valUnicode="dummy"/>
-                </PropertyList>
-              </FormEntry>
-            </TaskForms>
-          </Task>
         </Task>
       </Task>
     </Programs>

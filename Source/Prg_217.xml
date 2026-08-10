@@ -19,7 +19,10 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="1"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
@@ -27,11 +30,20 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739831" _time="56195" date="08/03/2026" time="15:36:35"/>
+          <LastModified _date="739835" _time="32242" date="08/07/2026" time="08:57:22"/>
         </Header>
-        <ItemIsn val="1"/>
+        <ItemIsn val="3"/>
         <Resource>
           <Columns>
+            <Column id="2" name="p-bearer token">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="2000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="2000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
             <Column id="1" name="v-JSON blob">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_BLOB" id="1"/>
@@ -67,7 +79,7 @@
             <LockingStrategy val="I"/>
             <CacheStrategy val="T"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="P"/>
+            <TransactionMode val="W"/>
             <TransactionBegin val="T"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
@@ -121,6 +133,24 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="2" FlowIsn="8" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="9">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="1" FlowIsn="4" id="1">
                   <Column val="1"/>
                   <Type val="V"/>
@@ -154,6 +184,10 @@
                   <TaskID comp="-1" obj="216"/>
                   <Lock val="N"/>
                   <Arguments>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
                     <Argument>
                       <Variable val="1"/>
                       <Skip val="N"/>
