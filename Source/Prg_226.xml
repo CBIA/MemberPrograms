@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739838" _time="59100" date="08/10/2026" time="16:25:00"/>
+          <LastModified _date="739839" _time="31529" date="08/11/2026" time="08:45:29"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -86,11 +86,11 @@
             <ConfirmUpdate CNFU="N"/>
             <ConfirmCancel val="N"/>
             <ErrorStrategy val="A"/>
-            <LockingStrategy val="O"/>
-            <CacheStrategy val="D"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="N"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="D"/>
-            <TransactionBegin val="P"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="L"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
@@ -205,7 +205,7 @@
             <LogicLines>
               <LogicLine>
                 <BLOCK EndBlock="30" EndBlockSegment="30" FlowIsn="28" Type="I">
-                  <Condition val="Y"/>
+                  <Condition Exp="2"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </BLOCK>
@@ -369,6 +369,10 @@
         <Expressions>
           <Expression id="1">
             <ExpSyntax val="Delay(5)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="{0,4}='055e9196-0e96-4a10-8530-1c30431e6cb6'"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
