@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="96"/>
+  <LastIsn val="98"/>
 
   <LastIsnFolder val="2"/>
 
@@ -6685,6 +6685,259 @@
         <Segment>
           <Size val="20"/>
           <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Agent_Sid_User_Log" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="97" name="Agent_Sid_User_Log">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="Sid">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Modifiable id="53"/>
+        <Range id="98" valUnicode="\-2147483648-2147483647"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Sid"/>
+        <Type id="179" val="INTEGER IDENTITY"/>
+        <UserType id="180"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Login_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="60"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="120"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Login_ID"/>
+        <Type id="179" val="NCHAR(60)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Login_date">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="##/##/####"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Login_date"/>
+        <Type id="179" val="DATETIME"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Name_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Name_ID"/>
+        <Type id="179" val="NCHAR(10)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="PK__Agent_Si__CA1E5D780E391C95">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="PK__Agent_Si__CA1E5D780E391C95"/>
+      <HasHint val="N"/>
+      <Clustered val="Y"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Roster_Personal_Acct_Xref" Resident="N" UniqueISNConvState="12" data_source="CBIA_INHOUSE" id="98" name="Roster_Personal_Acct_Xref">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="CRMRosterCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="CRMRosterCode"/>
+        <Type id="179" val="CHAR(20)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="AccountType">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="AccountType"/>
+        <Type id="179" val="CHAR(20)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="CRMSequenceNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166"/>
+        <NullDefault id="169"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="CRMSequenceNo"/>
+        <Type id="179" val="CHAR(2)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Roster">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Roster"/>
+      <HasHint val="N"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="Y"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="20"/>
+          <Column val="1"/>
           <Order val="A"/>
         </Segment>
       </Segments>
