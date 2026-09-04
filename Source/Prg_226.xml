@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739839" _time="31529" date="08/11/2026" time="08:45:29"/>
+          <LastModified _date="739859" _time="52379" date="08/31/2026" time="14:32:59"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -205,7 +205,7 @@
             <LogicLines>
               <LogicLine>
                 <BLOCK EndBlock="30" EndBlockSegment="30" FlowIsn="28" Type="I">
-                  <Condition Exp="2"/>
+                  <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </BLOCK>
